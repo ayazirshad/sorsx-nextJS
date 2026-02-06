@@ -1,7 +1,7 @@
 import React from "react";
 
 const Professional = () => {
-  return <div>page</div>;
+  return <div>Professional</div>;
 };
 
-export default page;
+export default Professional;

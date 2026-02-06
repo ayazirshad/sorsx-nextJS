@@ -1,0 +1,135 @@
+/* ========================================= */
+/* ---------------SLIDER--------------- */
+/* ========================================= */
+
+.slider {
+  margin: 0px auto;
+  padding: 30px 0;
+  position: relative;
+  /* background-image:
+    linear-gradient(to right, #f2f4f7 1px, transparent 1px),
+    linear-gradient(to bottom, #f2f4f7 1px, transparent 1px);
+  background-size: 120px 120px; */
+  /* background: #040404; */
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  padding-left: var(--section-px);
+  padding-right: var(--section-px);
+  gap: 70px;
+  width: calc(200px * 24); /* Large width for scrolling */
+  /* Animation handled via media queries */
+}
+
+.slide {
+  height: 40px;
+  width: 100px;
+  flex: 0 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 100px;
+  padding: 5px 0;
+}
+
+.slide:first-child {
+  width: 160px;
+  flex: 0 0 160px;
+  height: auto;
+}
+
+.slide:first-child img {
+  width: 100%;
+  height: auto;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%) brightness(1);
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+/* .slide img:hover {
+  transform: translateZ(20px);
+} */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Adjusted to match Demo page 2 */
+    transform: translateX(calc(-170px * 8));
+  }
+}
+
+@media (max-width: 1536px) {
+  .slide-track {
+    gap: 55px;
+  }
+}
+
+/* DESKTOP STYLES (>= 768px) */
+@media (min-width: 768px) {
+  .slide-track {
+    max-width: 1920px; /* Apply max-width only on desktop */
+    width: 100%;
+    justify-content: space-around;
+    animation: none;
+    transform: none;
+  }
+
+  /* Hide the duplicate sets (index 9 to 24) */
+  .slide:nth-child(n + 9) {
+    display: none;
+  }
+}
+
+/* MOBILE STYLES (< 768px) */
+@media (max-width: 767px) {
+  .slide-track {
+    animation: scroll 20s linear infinite;
+    gap: 45px; /* Ensure gap is consistent */
+  }
+
+  /* Ensure all slides are visible on mobile for the loop */
+  .slide:nth-child(n + 9) {
+    display: flex;
+  }
+
+  /* .slider::before,
+  .slider::after {
+    display: block;
+  } */
+}
+
+/* .slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    #040404 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 25%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+} */

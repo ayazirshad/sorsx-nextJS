@@ -3,6 +3,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import "./homePage.css";
 import { useState } from "react";
+import Slider from "@/components/Slider/Slider";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -51,82 +52,7 @@ export default function Home() {
       </section>
 
       {/* <!-- slider  --> */}
-      <div className="slider container">
-        <div className="slide-track">
-          <div className="slide">
-            <img src="assets/index/logo_1.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_2.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_3.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_4.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_5.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_6.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_7.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_8.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_1.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_2.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_3.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_4.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_5.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_6.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_7.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_8.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_1.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_2.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_3.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_4.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_5.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_6.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_7.png" alt="scrollLogo" />
-          </div>
-          <div className="slide">
-            <img src="assets/index/logo_8.png" alt="scrollLogo" />
-          </div>
-        </div>
-      </div>
+      <Slider bgColor="black" />
 
       {/* <!-- ai recruiting section --> */}
       <section className="info-section shortlist-section padding-y">
