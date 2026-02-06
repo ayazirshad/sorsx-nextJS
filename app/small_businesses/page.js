@@ -1,8 +1,6 @@
 import React from "react";
 import "./small_businesses.css";
 import FAQs from "@/components/FAQs/FAQs";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 
 const SmallBusinesses = () => {
   const faqs = [
@@ -35,8 +33,6 @@ const SmallBusinesses = () => {
 
   return (
     <>
-      {/* header  */}
-      <Header />
       {/* hero section  */}
       <section className="hero-section hospitality-hero padding-y">
         <div className="container hero-grid">
@@ -255,9 +251,6 @@ const SmallBusinesses = () => {
 
       {/* <!-- faq section --> */}
       <FAQs faqsData={faqs} />
-
-      {/* footer */}
-      <Footer />
     </>
   );
 };

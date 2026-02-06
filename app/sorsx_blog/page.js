@@ -3,15 +3,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import "./sorsx_blog.css";
 import { blogData } from "@/lib/blogData";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 
 const SorsxBlog = () => {
   const [blogs, setBlogs] = useState(blogData);
   return (
     <>
-      {/* header */}
-      <Header />
       {/* hero section  */}
       <main>
         {/* Newsroom Header */}
@@ -54,9 +50,6 @@ const SorsxBlog = () => {
           </div>
         </section>
       </main>
-
-      {/* footer */}
-      <Footer />
     </>
   );
 };

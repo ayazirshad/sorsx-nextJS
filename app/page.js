@@ -166,12 +166,12 @@ export default function Home() {
                       <img
                         src="assets/index/CloudAITechnologies.png"
                         alt="Cloud AI Technologies"
-                        class="card-logo-1"
+                        className="card-logo-1"
                       />
                       <img
                         src="assets/index/waditek.png"
                         alt="waditek"
-                        class="card-logo-2"
+                        className="card-logo-2"
                       />
                     </div>
                     <p className="text-T1">

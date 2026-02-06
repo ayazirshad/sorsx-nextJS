@@ -1,35 +1,21 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { blogData } from "@/lib/blogData";
 import "./blog_detail.css";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 
 const BlogDetail = () => {
   const searchParams = useSearchParams();
-  const router = useRouter();
   const blogId = parseInt(searchParams.get("id"));
 
-  // Find current blog
+  console.log("blogId:", blogId);
+
   const blog = blogData.find((b) => b.id === blogId);
-
-  // Redirect to blog list if invalid id
-  if (!blog) {
-    if (typeof window !== "undefined") {
-      router.push("/sorsx_blog");
-    }
-    return null;
-  }
-
-  // Get related blogs (exclude current, max 3)
   const relatedBlogs = blogData.filter((b) => b.id !== blogId).slice(0, 3);
 
   return (
     <>
-      {/* header */}
-      <Header />
       {/* hero */}
       <main>
         {/* Blog Hero Section */}
@@ -80,7 +66,17 @@ const BlogDetail = () => {
             </section>
           </>
         ) : (
-          <div>no blogs</div>
+          <div
+            style={{
+              width: "100%",
+              minHeight: "300px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            No Blog found!
+          </div>
         )}
 
         {/* Related Blogs */}
@@ -118,8 +114,6 @@ const BlogDetail = () => {
           </section>
         )}
       </main>
-      {/* footer */}
-      <Footer />
     </>
   );
 };

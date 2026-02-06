@@ -1,8 +1,6 @@
 import React from "react";
 import "./enterprise.css";
-import Header from "@/components/Header/Header";
 import FAQs from "@/components/FAQs/FAQs";
-import Footer from "@/components/Footer/Footer";
 
 const Enterprise = () => {
   const faqs = [
@@ -36,9 +34,6 @@ const Enterprise = () => {
 
   return (
     <>
-      {/* header */}
-      <Header />
-
       {/* <!-- hero  --> */}
       <section className="hero-section hospitality-hero padding-y">
         <div className="container hero-grid">
@@ -256,9 +251,6 @@ const Enterprise = () => {
 
       {/* faqs */}
       <FAQs faqsData={faqs} />
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 };
