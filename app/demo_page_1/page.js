@@ -41,65 +41,65 @@ const DemoPage1 = () => {
   return (
     <>
       {/* <!-- hero --> */}
-      <section class="text-center hero-section">
-        <div class="bg-rod-container">
-          <div class="bg-rod-1"></div>
-          <div class="bg-rod-2"></div>
-          <div class="bg-rod-3"></div>
+      <section className="text-center hero-section">
+        <div className="bg-rod-container">
+          <div className="bg-rod-1"></div>
+          <div className="bg-rod-2"></div>
+          <div className="bg-rod-3"></div>
         </div>
-        <div class="container">
-          <h1 class="main-heading">
+        <div className="container">
+          <h1 className="main-heading">
             {/* <!-- Book an Ai Recruiting Demo --> */}
-            <span class="first-word">Book</span>
-            <span class="second-word">an AI</span>
+            <span className="first-word">Book</span>
+            <span className="second-word">an AI</span>
             <br />
             <span>Recruiting Demo</span>
           </h1>
-          <p class="sub-text">
+          <p className="sub-text">
             See SorsX automate sourcing, screening, and AI interviews for hiring
             teams
           </p>
 
           {/* <!-- Demo Form Section --> */}
-          <div class="hero-demo-form-container">
-            <div class="form-info-card">
-              <h2 class="form-title">Request a demo</h2>
-              <p class="text-T1">
+          <div className="hero-demo-form-container">
+            <div className="form-info-card">
+              <h2 className="form-title">Request a demo</h2>
+              <p className="text-T1">
                 Schedule a demo with our product expert to see how SorsX fits
                 into your hiring process and existing tools.
               </p>
             </div>
-            <div class="form-fields-wrapper">
-              <form class="demo-form">
-                <div class="form-row">
-                  <div class="form-group">
+            <div className="form-fields-wrapper">
+              <form className="demo-form">
+                <div className="form-row">
+                  <div className="form-group">
                     <label>First name</label>
                     <input type="text" placeholder="First name" required />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <label>Last name</label>
                     <input type="text" placeholder="Last name" required />
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="form-group">
+                <div className="form-row">
+                  <div className="form-group">
                     <label>Work Email</label>
                     <input type="email" placeholder="Work email" required />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <label>Company name</label>
                     <input type="text" placeholder="Company name" required />
                   </div>
                 </div>
-                <div class="form-group full-width">
+                <div className="form-group full-width">
                   <label>Job Title</label>
                   <input type="text" placeholder="Job title" required />
                 </div>
-                <div class="form-footer">
-                  <div class="btn-wrapper">
+                <div className="form-footer">
+                  <div className="btn-wrapper">
                     <button
                       type="submit"
-                      class="blue-border-button zero-margin"
+                      className="blue-border-button zero-margin"
                     >
                       Request a demo
                     </button>
@@ -111,17 +111,17 @@ const DemoPage1 = () => {
         </div>
       </section>
 
-      <div class="bottom-divider"></div>
+      <div className="bottom-divider"></div>
 
       {/* slider */}
       <Slider />
 
       {/* <!-- cards section --> */}
-      <section class="cards-section padding-y">
-        <div class="bg-blur-circles">
-          <div class="blur-circle circle-1"></div>
-          <div class="blur-circle circle-2"></div>
-          <div class="blur-circle circle-3"></div>
+      <section className="cards-section padding-y">
+        <div className="bg-blur-circles">
+          <div className="blur-circle circle-1"></div>
+          <div className="blur-circle circle-2"></div>
+          <div className="blur-circle circle-3"></div>
         </div>
         <div className="container grid-cards">
           {demoCards?.map((card, index) => (
@@ -137,18 +137,18 @@ const DemoPage1 = () => {
       </section>
 
       {/* <!-- feedback section --> */}
-      <section class="feedback-section padding-y">
-        <div class="container feedback-header">
-          <div class="feedback-text-content">
-            <h3 class="section-heading">
+      <section className="feedback-section padding-y">
+        <div className="container feedback-header">
+          <div className="feedback-text-content">
+            <h3 className="section-heading">
               The Recruitment Platform teams trust, worldwide.
             </h3>
-            <p class="text-T1">
+            <p className="text-T1">
               How CHROs and talent acquisition teams use our AI recruiting
               platform and AI interviewer to transform hiring.
             </p>
           </div>
-          <div class="trust-logos">
+          <div className="trust-logos">
             <img src="assets/demo_page_1/capterra.png" alt="Capterra" />
             <img
               src="assets/demo_page_1/software-advice.png"
@@ -157,70 +157,70 @@ const DemoPage1 = () => {
           </div>
         </div>
 
-        <div class="container testimonials-grid">
+        <div className="container testimonials-grid">
           {/* <!-- Testimonial 1 --> */}
-          <div class="testimonial-item">
-            <div class="testimonial-photo">
+          <div className="testimonial-item">
+            <div className="testimonial-photo">
               <img
                 src="assets/demo_page_1/Violet-Herin.png"
                 alt="Violet Herin"
-                class="photo-desktop"
+                className="photo-desktop"
               />
               <img
                 src="assets/demo_page_1/Violet-Herin.png"
                 alt="Violet Herin"
-                class="photo-mobile"
+                className="photo-mobile"
               />
             </div>
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <div class="author-info">
-                  <h4 class="text-L1">Violet Herin</h4>
-                  <p class="text-L2">CEO, Projé Inc.</p>
+            <div className="testimonial-card">
+              <div className="testimonial-header">
+                <div className="author-info">
+                  <h4 className="text-L1">Violet Herin</h4>
+                  <p className="text-L2">CEO, Projé Inc.</p>
                 </div>
                 <img src="assets/demo_page_1/quote-icon.svg" alt="qoute" />
               </div>
-              <p class="text-T1">
+              <p className="text-T1">
                 It has truly been a game-changer in expediting screening and
                 first interviews. It captures exactly what we need to make
                 informed decisions.
               </p>
-              <div class="testimonial-company">
+              <div className="testimonial-company">
                 <img src="assets/demo_page_1/proje.png" alt="Proje Logo" />
               </div>
             </div>
           </div>
 
           {/* <!-- Testimonial 2 --> */}
-          <div class="testimonial-item">
-            <div class="testimonial-photo">
+          <div className="testimonial-item">
+            <div className="testimonial-photo">
               <img
                 src="assets/demo_page_1/Sevda-Canbaz.png"
                 alt="Sevda Canbaz"
-                class="photo-desktop"
+                className="photo-desktop"
               />
               <img
                 src="assets/demo_page_1/Sevda-Canbaz.png"
                 alt="Sevda Canbaz"
-                class="photo-mobile"
+                className="photo-mobile"
               />
             </div>
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <div class="author-info">
-                  <h4 class="text-L1">Sevda Canbaz</h4>
-                  <p class="text-L2">
+            <div className="testimonial-card">
+              <div className="testimonial-header">
+                <div className="author-info">
+                  <h4 className="text-L1">Sevda Canbaz</h4>
+                  <p className="text-L2">
                     People and Culture Manager, Dalgakıran Kompresör
                   </p>
                 </div>
                 <img src="assets/demo_page_1/quote-icon.svg" alt="qoute" />
               </div>
-              <p class="text-T1">
+              <p className="text-T1">
                 SorsX AI recruitment software automated screening and AI video
                 interviews, delivering standardized evaluations and
                 decision-ready shortlists fast.
               </p>
-              <div class="testimonial-company">
+              <div className="testimonial-company">
                 <img
                   src="assets/demo_page_1/Dalgakiran.png"
                   alt="Dalgakıran Logo"

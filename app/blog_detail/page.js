@@ -1,11 +1,11 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { blogData } from "@/lib/blogData";
 import "./blog_detail.css";
 
-const BlogDetail = () => {
+const BlogDetailContent = () => {
   const searchParams = useSearchParams();
   const blogId = parseInt(searchParams.get("id"));
 
@@ -115,6 +115,14 @@ const BlogDetail = () => {
         )}
       </main>
     </>
+  );
+};
+
+const BlogDetail = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <BlogDetailContent />
+    </Suspense>
   );
 };
 

@@ -2,13 +2,20 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Header.css";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = ({ isTrPage }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const headerRef = useRef(null);
+
+  useEffect(() => {
+    setOpenDropdown(null);
+    setMenuOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 50);
