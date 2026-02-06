@@ -57,15 +57,13 @@
 
 .sub-text {
   font-family: var(--font-inter);
-  font-size: clamp(16px, 1.1vw, 20px);
-  /* Fluid 16-20px */
+  font-size: clamp(16px, 1.1vw, 20px); /* Fluid 16-20px */
   color: var(--color-text-secondary);
   margin: 30px 0px 40px 0;
   font-weight: 300;
   text-align: left;
   max-width: 810px;
-  line-height: clamp(24px, 1.56vw, 30px);
-  /* Fluid line-height */
+  line-height: clamp(24px, 1.56vw, 30px); /* Fluid line-height */
 }
 
 @media (max-width: 1536px) {
@@ -109,7 +107,6 @@
   margin-top: 0;
   object-fit: contain;
 }
-
 @media (max-width: 1200px) {
   .hospitality-hero .hero-image-wrapper img {
     border-radius: 18px;
@@ -175,8 +172,7 @@
   padding-left: var(--section-px);
   padding-right: var(--section-px);
   gap: 70px;
-  width: calc(200px * 24);
-  /* Large width for scrolling */
+  width: calc(200px * 24); /* Large width for scrolling */
   /* Animation handled via media queries */
 }
 
@@ -190,6 +186,7 @@
   perspective: 100px;
   padding: 5px 0;
 }
+
 .slide:first-child {
   width: 160px;
   flex: 0 0 160px;
@@ -208,7 +205,6 @@
   object-fit: contain;
   transition: transform 0.3s;
 }
-
 /* .slide img:hover {
   transform: translateZ(20px);
 } */
@@ -217,7 +213,6 @@
   0% {
     transform: translateX(0);
   }
-
   100% {
     /* Adjusted to match Demo page 2 */
     transform: translateX(calc(-170px * 8));
@@ -233,8 +228,7 @@
 /* DESKTOP STYLES (>= 768px) */
 @media (min-width: 768px) {
   .slide-track {
-    max-width: 1920px;
-    /* Apply max-width only on desktop */
+    max-width: 1920px; /* Apply max-width only on desktop */
     width: 100%;
     justify-content: space-around;
     animation: none;
@@ -251,8 +245,7 @@
 @media (max-width: 767px) {
   .slide-track {
     animation: scroll 20s linear infinite;
-    gap: 45px;
-    /* Ensure gap is consistent */
+    gap: 45px; /* Ensure gap is consistent */
   }
 
   /* Ensure all slides are visible on mobile for the loop */
@@ -290,6 +283,7 @@
   top: 0;
   transform: rotateZ(180deg);
 } */
+
 .btn-wrapper {
   display: flex;
   gap: 15px;
@@ -305,8 +299,7 @@
 }
 
 .logo-stack {
-  display: none;
-  /* Globally hidden */
+  display: none; /* Globally hidden */
   width: 100%;
   gap: 32px;
   flex-wrap: wrap;
@@ -318,14 +311,12 @@
 
 @media (max-width: 768px) {
   .slider {
-    display: grid;
-    /* Make slider visible */
+    display: grid; /* Make slider visible */
   }
 
   /* .logo-stack {
     margin-bottom: 30px;
-  } */
-  /* Removed */
+  } */ /* Removed */
 
   .hero-image-wrapper img {
     margin-top: 0;
@@ -344,7 +335,6 @@
     justify-content: center;
     align-items: center;
   }
-
   .buttons-desktop {
     display: none;
   }
@@ -468,7 +458,7 @@
 /* ======= OUTREACH SECTION ======= */
 
 .outreach-section {
-  background: linear-gradient(to bottom, #1a234c, #4e6bea);
+  background: linear-gradient(to bottom, #1a234c, #4ec6ea);
   color: #fff;
 }
 
@@ -499,13 +489,11 @@
 .shortlist-section .section-description {
   color: #141219;
 }
-
 .shortlist-section h3 {
   font-size: clamp(28px, 2.4vw, 48px);
   line-height: 1.2;
   max-width: 860px;
 }
-
 .shortlist-section .section-description {
   max-width: 700px;
 }
@@ -514,7 +502,6 @@
   border: 1px solid var(--color-blue);
   color: var(--color-blue);
 }
-
 .shortlist-section .bullet-icon {
   filter: none;
 }
@@ -620,7 +607,7 @@
   height: 100%;
   max-height: 275px;
   aspect-ratio: 16/9;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .hiring-card-content {
@@ -634,7 +621,6 @@
 .hiring-card-content h6 {
   font-weight: 600;
   margin-bottom: 12px;
-  font-size: 22px;
 }
 
 .hiring-card-content .text-T1 {

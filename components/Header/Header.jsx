@@ -38,7 +38,7 @@ const Header = ({ isTrPage }) => {
     >
       <div className="nav-container">
         <div className="logo-wrapper">
-          <a href="/">
+          <a href="//">
             <img
               src="assets/index/SorsX-Logo-Black.png"
               alt="logo"
@@ -67,7 +67,7 @@ const Header = ({ isTrPage }) => {
             <div className="dropdown-menu mega-menu">
               <div className="mega-menu-grid">
                 <div className="mega-menu-column">
-                  <a href="sorsx_ai.html" className="mega-menu-item">
+                  <a href="/sorsx_ai" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/sorsx ai.png"
                       alt="icon"
@@ -81,7 +81,7 @@ const Header = ({ isTrPage }) => {
                     </div>
                   </a>
 
-                  <a href="sorsx_next.html" className="mega-menu-item">
+                  <a href="/sorsx_next" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/sorsx next.png"
                       alt="icon"
@@ -95,7 +95,7 @@ const Header = ({ isTrPage }) => {
                     </div>
                   </a>
 
-                  <a href="ai_ats_crm.html" className="mega-menu-item">
+                  <a href="/ai_ats_crm" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/ai ats crm.png"
                       alt="icon"
@@ -111,7 +111,7 @@ const Header = ({ isTrPage }) => {
                 </div>
 
                 <div className="mega-menu-column">
-                  <a href="sorsx_hire.html" className="mega-menu-item">
+                  <a href="/sorsx_hire" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/scale hire.png"
                       alt="icon"
@@ -125,7 +125,7 @@ const Header = ({ isTrPage }) => {
                     </div>
                   </a>
 
-                  <a href="ai_interviewer.html" className="mega-menu-item">
+                  <a href="/ai_interviewer" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/ai interviewer.png"
                       alt="icon"
@@ -139,7 +139,7 @@ const Header = ({ isTrPage }) => {
                     </div>
                   </a>
 
-                  <a href="demo_page_1.html" className="mega-menu-item">
+                  <a href="/demo_page_1" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/demo.png"
                       alt="icon"
@@ -177,7 +177,7 @@ const Header = ({ isTrPage }) => {
               <div className="mega-menu-grid">
                 {/* <!-- Left Column --> */}
                 <div className="mega-menu-column">
-                  <a href="hospitality.html" className="mega-menu-item">
+                  <a href="/hospitality" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/hospitality.png"
                       alt="icon"
@@ -190,7 +190,7 @@ const Header = ({ isTrPage }) => {
                       </p>
                     </div>
                   </a>
-                  <a href="construction.html" className="mega-menu-item">
+                  <a href="/construction" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/construction.png"
                       alt="icon"
@@ -203,7 +203,7 @@ const Header = ({ isTrPage }) => {
                       </p>
                     </div>
                   </a>
-                  <a href="tech.html" className="mega-menu-item">
+                  <a href="/tech" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/tech.png"
                       alt="icon"
@@ -220,7 +220,7 @@ const Header = ({ isTrPage }) => {
 
                 {/* <!-- Right Column --> */}
                 <div className="mega-menu-column">
-                  <a href="manufacturing.html" className="mega-menu-item">
+                  <a href="/manufacturing" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/manufacturing.png"
                       alt="icon"
@@ -233,7 +233,7 @@ const Header = ({ isTrPage }) => {
                       </p>
                     </div>
                   </a>
-                  <a href="professional.html" className="mega-menu-item">
+                  <a href="/professional" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/professional.png"
                       alt="icon"
@@ -248,7 +248,7 @@ const Header = ({ isTrPage }) => {
                       </p>
                     </div>
                   </a>
-                  <a href="healthcare.html" className="mega-menu-item">
+                  <a href="/healthcare" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/healthcare.png"
                       alt="icon"
@@ -286,7 +286,7 @@ const Header = ({ isTrPage }) => {
               <div className="mega-menu-grid">
                 {/* <!-- Left Column --> */}
                 <div className="mega-menu-column">
-                  <a href="small_businesses.html" className="mega-menu-item">
+                  <a href="/small_businesses" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/small.png"
                       alt="icon"
@@ -301,7 +301,7 @@ const Header = ({ isTrPage }) => {
                       </p>
                     </div>
                   </a>
-                  <a href="midsize_businesses.html" className="mega-menu-item">
+                  <a href="/midsize_businesses" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/midsize.png"
                       alt="icon"
@@ -316,7 +316,7 @@ const Header = ({ isTrPage }) => {
                       </p>
                     </div>
                   </a>
-                  <a href="enterprise.html" className="mega-menu-item">
+                  <a href="/enterprise" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/enterprise.png"
                       alt="icon"
@@ -354,7 +354,7 @@ const Header = ({ isTrPage }) => {
               <div className="mega-menu-grid">
                 {/* <!-- Left Column --> */}
                 <div className="mega-menu-column">
-                  {/* <!-- <a href="about_us.html" className="mega-menu-item">
+                  {/* <!-- <a href="/about_us" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/about us.png"
                       alt="icon"
@@ -365,7 +365,7 @@ const Header = ({ isTrPage }) => {
                       <p className="text-C1 mega-menu-desc">Who we are.</p>
                     </div>
                   </a> --> */}
-                  <a href="sorsx_blog.html" className="mega-menu-item">
+                  <a href="/sorsx_blog" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/newsroom.png"
                       alt="icon"
@@ -376,7 +376,7 @@ const Header = ({ isTrPage }) => {
                       <p className="text-C1 mega-menu-desc">See what’s new</p>
                     </div>
                   </a>
-                  <a href="careers.html" className="mega-menu-item">
+                  <a href="/careers" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/about us.png"
                       alt="icon"
@@ -427,7 +427,7 @@ const Header = ({ isTrPage }) => {
               </div>
             </div>
             <a
-              href="https://employer.sorsx.com/login"
+              href="/https://employer.sorsx.com/login"
               target="_blank"
               rel="noopener noreferrer"
               title="Login"
@@ -435,7 +435,7 @@ const Header = ({ isTrPage }) => {
             >
               Log In
             </a>
-            <a href="demo_page_2.html" rel="noopener noreferrer">
+            <a href="/demo_page_2" rel="noopener noreferrer">
               <button className="nav-button">Request a demo</button>
             </a>
           </div>
@@ -488,7 +488,7 @@ const Header = ({ isTrPage }) => {
 
           {/* <!-- login link  --> */}
           <a
-            href="https://employer.sorsx.com/login"
+            href="/https://employer.sorsx.com/login"
             target="_blank"
             rel="noopener noreferrer"
             title="Login"
@@ -496,7 +496,7 @@ const Header = ({ isTrPage }) => {
           >
             Log In
           </a>
-          <a href="demo_page_2.html" rel="noopener noreferrer">
+          <a href="/demo_page_2" rel="noopener noreferrer">
             <button className="blue-button">Request a demo</button>
           </a>
         </div>

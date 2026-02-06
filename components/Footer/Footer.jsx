@@ -3,26 +3,26 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer class="footer padding-y">
-      <div class="footer-container container">
-        <div class="footer-top">
-          <div class="footer-logo-section">
+    <footer className="footer padding-y">
+      <div className="footer-container container">
+        <div className="footer-top">
+          <div className="footer-logo-section">
             <img
               src="assets/index/SorsX-Logo-Black.png"
               alt="SorsX"
-              class="footer-logo"
+              className="footer-logo"
             />
-            <p class="text-T1">
+            <p className="text-T1">
               SorsX is an AI recruiting software and AI hiring platform that
               plugs into your existing hiring process, automating sourcing,
               screening, and AI video interviews so teams focus only on the best
               candidates.
             </p>
           </div>
-          <div class="footer-links-grid">
-            <div class="footer-column">
-              <h4 class="footer-heading">Industries</h4>
-              <ul class="footer-links">
+          <div className="footer-links-grid">
+            <div className="footer-column">
+              <h4 className="footer-heading">Industries</h4>
+              <ul className="footer-links">
                 <li>
                   <a href="hospitality.html">Hospitality</a>
                 </li>
@@ -43,9 +43,9 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="footer-column">
-              <h4 class="footer-heading">Business Size</h4>
-              <ul class="footer-links">
+            <div className="footer-column">
+              <h4 className="footer-heading">Business Size</h4>
+              <ul className="footer-links">
                 <li>
                   <a href="small_businesses.html">Small Businesses</a>
                 </li>
@@ -57,9 +57,9 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="footer-column">
-              <h4 class="footer-heading">Platform</h4>
-              <ul class="footer-links">
+            <div className="footer-column">
+              <h4 className="footer-heading">Platform</h4>
+              <ul className="footer-links">
                 <li>
                   <a href="sorsx_ai.html">SorsX AI</a>
                 </li>
@@ -78,9 +78,9 @@ const Footer = () => {
                 {/* <li><a href="demo_page_2.html">Demo</a></li> */}
               </ul>
             </div>
-            <div class="footer-column">
-              <h4 class="footer-heading">Company</h4>
-              <ul class="footer-links">
+            <div className="footer-column">
+              <h4 className="footer-heading">Company</h4>
+              <ul className="footer-links">
                 {/* <li><a href="about_us.html">About Us</a></li> */}
                 <li>
                   <a href="careers.html">Careers</a>
@@ -90,9 +90,9 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="footer-column">
-              <h4 class="footer-heading">Privacy & Security</h4>
-              <ul class="footer-links">
+            <div className="footer-column">
+              <h4 className="footer-heading">Privacy & Security</h4>
+              <ul className="footer-links">
                 <li>
                   <a href="terms_of_service.html">Terms of Use</a>
                 </li>
@@ -121,10 +121,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="divider"></div>
-        <div class="footer-bottom">
-          <p class="copyright">© 2026 SorsX. All rights reserved.</p>
-          <div class="social-links">
+        <div className="divider"></div>
+        <div className="footer-bottom">
+          <p className="copyright">© 2026 SorsX. All rights reserved.</p>
+          <div className="social-links">
             <a href="https://www.instagram.com/sorsx.hq">
               <img src="assets/index/instagram.svg" alt="Instagram" />
             </a>
