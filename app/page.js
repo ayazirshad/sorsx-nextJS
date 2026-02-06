@@ -13,7 +13,7 @@ export default function Home() {
     setActiveIndex(index);
   };
   return (
-    <div>
+    <div id="home-page">
       <Header />
 
       {/* <!-- hero  --> */}

@@ -39,7 +39,7 @@ const DemoPage1 = () => {
   ];
 
   return (
-    <>
+    <div id="demo-page-1">
       {/* <!-- hero --> */}
       <section className="text-center hero-section">
         <div className="bg-rod-container">
@@ -230,7 +230,7 @@ const DemoPage1 = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
