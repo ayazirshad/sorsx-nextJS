@@ -2,6 +2,7 @@ import React from "react";
 import "./sorsx_ai.css";
 import Slider from "@/components/Slider/Slider";
 import FAQs from "@/components/FAQs/FAQs";
+import Link from "next/link";
 
 const SorsxAi = () => {
   const faqs = [
@@ -76,11 +77,11 @@ const SorsxAi = () => {
             hire-ready shortlists without agencies or extra tools.
           </p>
           <div class="btn-wrapper">
-            <a href="demo_page_2.html">
+            <Link href="demo_page_2.html">
               <button class="blue-border-button">
                 <p>Request a demo</p>
               </button>
-            </a>
+            </Link>
           </div>
           <div class="mobile-image">
             <img src="assets/sorsx_ai/SorsXAiheromobile.png" alt="hero-image" />
@@ -129,9 +130,9 @@ const SorsxAi = () => {
               response rates while protecting candidate experience.
             </p>
             <div class="mt-3">
-              <a href="demo_page_1.html">
+              <Link href="demo_page_1.html">
                 <button class="white-button">See SorsX AI in action</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
