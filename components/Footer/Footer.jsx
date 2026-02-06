@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -24,22 +25,22 @@ const Footer = () => {
               <h4 className="footer-heading">Industries</h4>
               <ul className="footer-links">
                 <li>
-                  <a href="hospitality.html">Hospitality</a>
+                  <Link href="/hospitality">Hospitality</Link>
                 </li>
                 <li>
-                  <a href="construction.html">Construction</a>
+                  <Link href="/construction">Construction</Link>
                 </li>
                 <li>
-                  <a href="tech.html">Tech</a>
+                  <Link href="/tech">Tech</Link>
                 </li>
                 <li>
-                  <a href="manufacturing.html">Manufacturing</a>
+                  <Link href="/manufacturing">Manufacturing</Link>
                 </li>
                 <li>
-                  <a href="professional.html">Professional Services</a>
+                  <Link href="/professional">Professional Services</Link>
                 </li>
                 <li>
-                  <a href="healthcare.html">Healthcare</a>
+                  <Link href="/healthcare">Healthcare</Link>
                 </li>
               </ul>
             </div>
@@ -47,13 +48,13 @@ const Footer = () => {
               <h4 className="footer-heading">Business Size</h4>
               <ul className="footer-links">
                 <li>
-                  <a href="small_businesses.html">Small Businesses</a>
+                  <Link href="/small_businesses">Small Businesses</Link>
                 </li>
                 <li>
-                  <a href="midsize_businesses.html">Midsize Businesses</a>
+                  <Link href="/midsize_businesses">Midsize Businesses</Link>
                 </li>
                 <li>
-                  <a href="enterprise.html">Enterprise</a>
+                  <Link href="/enterprise">Enterprise</Link>
                 </li>
               </ul>
             </div>
@@ -61,32 +62,35 @@ const Footer = () => {
               <h4 className="footer-heading">Platform</h4>
               <ul className="footer-links">
                 <li>
-                  <a href="sorsx_ai.html">SorsX AI</a>
+                  <Link href="/sorsx_ai">SorsX AI</Link>
                 </li>
                 <li>
-                  <a href="sorsx_hire.html">SorsX Hire</a>
+                  <Link href="/sorsx_hire">SorsX Hire</Link>
                 </li>
                 <li>
-                  <a href="ai_interviewer.html">AI Interviewer</a>
+                  <Link href="/ai_interviewer">AI Interviewer</Link>
                 </li>
                 <li>
-                  <a href="sorsx_next.html">SorsX Next</a>
+                  <Link href="/sorsx_next">SorsX Next</Link>
                 </li>
                 <li>
-                  <a href="ai_ats_crm.html">AI ATS & CRM</a>
+                  <Link href="/ai_ats_crm">AI ATS & CRM</Link>
                 </li>
-                {/* <li><a href="demo_page_2.html">Demo</a></li> */}
+                {/* <li><a href="/demo_page_2">Demo</a></li> */}
               </ul>
             </div>
             <div className="footer-column">
               <h4 className="footer-heading">Company</h4>
               <ul className="footer-links">
-                {/* <li><a href="about_us.html">About Us</a></li> */}
+                {/* <li><a href="/about_us">About Us</a></li> */}
                 <li>
-                  <a href="careers.html">Careers</a>
+                  {/* <Link href="/careers">Careers</Link> */}
+                  <Link href="https://www.sorsx.com/company/82e35e93-2965-4fdb-877b-01c265c6cca3/sorsx">
+                    Careers
+                  </Link>
                 </li>
                 <li>
-                  <a href="sorsx_blog.html">Newsroom</a>
+                  <Link href="/sorsx_blog">Newsroom</Link>
                 </li>
               </ul>
             </div>
@@ -94,28 +98,28 @@ const Footer = () => {
               <h4 className="footer-heading">Privacy & Security</h4>
               <ul className="footer-links">
                 <li>
-                  <a href="terms_of_service.html">Terms of Use</a>
+                  <Link href="/terms_of_service">Terms of Use</Link>
                 </li>
                 <li>
-                  <a href="privacy_policy.html">Privacy Policy</a>
+                  <Link href="/privacy_policy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <a href="candidate_notice_and_consent.html">
+                  <Link href="/candidate_notice_and_consent">
                     Candidate Notice and Consent
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="cookie_notice.html">Cookie Settings</a>
+                  <Link href="/cookie_notice">Cookie Settings</Link>
                 </li>
                 <li>
-                  <a href="data_processing_addendum.html">
+                  <Link href="/data_processing_addendum">
                     Data Processing Addendum
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="opt_out_request.html">
+                  <Link href="/opt_out_request">
                     Do Not Sell My Personal Information
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -125,10 +129,10 @@ const Footer = () => {
         <div className="footer-bottom">
           <p className="copyright">© 2026 SorsX. All rights reserved.</p>
           <div className="social-links">
-            <a href="https://www.instagram.com/sorsx.hq">
+            <a href="/https://www.instagram.com/sorsx.hq">
               <img src="assets/index/instagram.svg" alt="Instagram" />
             </a>
-            <a href="https://www.linkedin.com/company/sorsx">
+            <a href="/https://www.linkedin.com/company/sorsx">
               <img src="assets/index/linkedIn.svg" alt="LinkedIn" />
             </a>
           </div>

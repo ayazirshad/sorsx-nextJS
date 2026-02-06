@@ -38,13 +38,13 @@ const Header = ({ isTrPage }) => {
     >
       <div className="nav-container">
         <div className="logo-wrapper">
-          <a href="//">
+          <Link href="/">
             <img
               src="assets/index/SorsX-Logo-Black.png"
               alt="logo"
               className="logo"
             />
-          </a>
+          </Link>
         </div>
 
         <nav className={`nav-links ${menuOpen ? "open" : ""}`} id="mobileMenu">
@@ -67,7 +67,7 @@ const Header = ({ isTrPage }) => {
             <div className="dropdown-menu mega-menu">
               <div className="mega-menu-grid">
                 <div className="mega-menu-column">
-                  <a href="/sorsx_ai" className="mega-menu-item">
+                  <Link href="/sorsx_ai" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/sorsx ai.png"
                       alt="icon"
@@ -79,9 +79,9 @@ const Header = ({ isTrPage }) => {
                         Turn sourcing into autopilot
                       </p>
                     </div>
-                  </a>
+                  </Link>
 
-                  <a href="/sorsx_next" className="mega-menu-item">
+                  <Link href="/sorsx_next" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/sorsx next.png"
                       alt="icon"
@@ -93,9 +93,9 @@ const Header = ({ isTrPage }) => {
                         Find hidden talent instantly
                       </p>
                     </div>
-                  </a>
+                  </Link>
 
-                  <a href="/ai_ats_crm" className="mega-menu-item">
+                  <Link href="/ai_ats_crm" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/ai ats crm.png"
                       alt="icon"
@@ -107,11 +107,11 @@ const Header = ({ isTrPage }) => {
                         Keep pipelines moving automatically
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="mega-menu-column">
-                  <a href="/sorsx_hire" className="mega-menu-item">
+                  <Link href="/sorsx_hire" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/scale hire.png"
                       alt="icon"
@@ -123,9 +123,9 @@ const Header = ({ isTrPage }) => {
                         Screen every applicant instantly
                       </p>
                     </div>
-                  </a>
+                  </Link>
 
-                  <a href="/ai_interviewer" className="mega-menu-item">
+                  <Link href="/ai_interviewer" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/ai interviewer.png"
                       alt="icon"
@@ -137,9 +137,9 @@ const Header = ({ isTrPage }) => {
                         Make interviews consistent everywhere
                       </p>
                     </div>
-                  </a>
+                  </Link>
 
-                  <a href="/demo_page_1" className="mega-menu-item">
+                  <Link href="/demo_page_1" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/demo.png"
                       alt="icon"
@@ -151,7 +151,7 @@ const Header = ({ isTrPage }) => {
                         See SorsX in action
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@ const Header = ({ isTrPage }) => {
               <div className="mega-menu-grid">
                 {/* <!-- Left Column --> */}
                 <div className="mega-menu-column">
-                  <a href="/hospitality" className="mega-menu-item">
+                  <Link href="/hospitality" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/hospitality.png"
                       alt="icon"
@@ -189,8 +189,8 @@ const Header = ({ isTrPage }) => {
                         Fill shifts without delays
                       </p>
                     </div>
-                  </a>
-                  <a href="/construction" className="mega-menu-item">
+                  </Link>
+                  <Link href="/construction" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/construction.png"
                       alt="icon"
@@ -202,8 +202,8 @@ const Header = ({ isTrPage }) => {
                         Staff projects with confidence
                       </p>
                     </div>
-                  </a>
-                  <a href="/tech" className="mega-menu-item">
+                  </Link>
+                  <Link href="/tech" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/tech.png"
                       alt="icon"
@@ -215,12 +215,12 @@ const Header = ({ isTrPage }) => {
                         Validate skills, hire faster
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
 
                 {/* <!-- Right Column --> */}
                 <div className="mega-menu-column">
-                  <a href="/manufacturing" className="mega-menu-item">
+                  <Link href="/manufacturing" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/manufacturing.png"
                       alt="icon"
@@ -232,8 +232,8 @@ const Header = ({ isTrPage }) => {
                         Keep lines fully staffed
                       </p>
                     </div>
-                  </a>
-                  <a href="/professional" className="mega-menu-item">
+                  </Link>
+                  <Link href="/professional" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/professional.png"
                       alt="icon"
@@ -247,8 +247,8 @@ const Header = ({ isTrPage }) => {
                         Shortlist experts, not resumes
                       </p>
                     </div>
-                  </a>
-                  <a href="/healthcare" className="mega-menu-item">
+                  </Link>
+                  <Link href="/healthcare" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/healthcare.png"
                       alt="icon"
@@ -260,7 +260,7 @@ const Header = ({ isTrPage }) => {
                         Standardize hiring, reduce risk
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -286,7 +286,7 @@ const Header = ({ isTrPage }) => {
               <div className="mega-menu-grid">
                 {/* <!-- Left Column --> */}
                 <div className="mega-menu-column">
-                  <a href="/small_businesses" className="mega-menu-item">
+                  <Link href="/small_businesses" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/small.png"
                       alt="icon"
@@ -300,8 +300,8 @@ const Header = ({ isTrPage }) => {
                         Hire fast, stay lean
                       </p>
                     </div>
-                  </a>
-                  <a href="/midsize_businesses" className="mega-menu-item">
+                  </Link>
+                  <Link href="/midsize_businesses" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/midsize.png"
                       alt="icon"
@@ -315,8 +315,8 @@ const Header = ({ isTrPage }) => {
                         Scale hiring without chaos
                       </p>
                     </div>
-                  </a>
-                  <a href="/enterprise" className="mega-menu-item">
+                  </Link>
+                  <Link href="/enterprise" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/enterprise.png"
                       alt="icon"
@@ -328,7 +328,7 @@ const Header = ({ isTrPage }) => {
                         Standardize hiring across teams
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -365,7 +365,7 @@ const Header = ({ isTrPage }) => {
                       <p className="text-C1 mega-menu-desc">Who we are.</p>
                     </div>
                   </a> --> */}
-                  <a href="/sorsx_blog" className="mega-menu-item">
+                  <Link href="/sorsx_blog" className="mega-menu-item">
                     <img
                       src="assets/index/nav_icons/newsroom.png"
                       alt="icon"
@@ -375,8 +375,13 @@ const Header = ({ isTrPage }) => {
                       <p className="text-B2 mega-menu-title">Newsroom</p>
                       <p className="text-C1 mega-menu-desc">See what’s new</p>
                     </div>
-                  </a>
-                  <a href="/careers" className="mega-menu-item">
+                  </Link>
+                  {/* <Link href="/careers" className="mega-menu-item"> */}
+                  <Link
+                    href="https://www.sorsx.com/company/82e35e93-2965-4fdb-877b-01c265c6cca3/sorsx"
+                    className="mega-menu-item"
+                    target="blank"
+                  >
                     <img
                       src="assets/index/nav_icons/about us.png"
                       alt="icon"
@@ -386,7 +391,7 @@ const Header = ({ isTrPage }) => {
                       <p className="text-B2 mega-menu-title">Careers</p>
                       <p className="text-C1 mega-menu-desc">Build the future</p>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -426,7 +431,7 @@ const Header = ({ isTrPage }) => {
                 </div>
               </div>
             </div>
-            <a
+            <Link
               href="/https://employer.sorsx.com/login"
               target="_blank"
               rel="noopener noreferrer"
@@ -434,10 +439,10 @@ const Header = ({ isTrPage }) => {
               className="login-link"
             >
               Log In
-            </a>
-            <a href="/demo_page_2" rel="noopener noreferrer">
+            </Link>
+            <Link href="/demo_page_2" rel="noopener noreferrer">
               <button className="nav-button">Request a demo</button>
-            </a>
+            </Link>
           </div>
         </nav>
 
@@ -487,7 +492,7 @@ const Header = ({ isTrPage }) => {
           </div>
 
           {/* <!-- login link  --> */}
-          <a
+          <Link
             href="/https://employer.sorsx.com/login"
             target="_blank"
             rel="noopener noreferrer"
@@ -495,10 +500,10 @@ const Header = ({ isTrPage }) => {
             className="login-link"
           >
             Log In
-          </a>
-          <a href="/demo_page_2" rel="noopener noreferrer">
+          </Link>
+          <Link href="/demo_page_2" rel="noopener noreferrer">
             <button className="blue-button">Request a demo</button>
-          </a>
+          </Link>
         </div>
 
         <button
