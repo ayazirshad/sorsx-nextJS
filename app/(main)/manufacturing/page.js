@@ -1,27 +1,27 @@
-import React from "react";
-import "./tech.css";
 import Slider from "@/components/Slider/Slider";
+import React from "react";
+import "./manufacturing.css";
 import Link from "next/link";
 
-const Tech = () => {
+const Manufacturing = () => {
   return (
-    <div id="tech-page">
+    <div id="manufacturing-page">
       {/* <!-- hero  --> */}
       <section className="hero-section hospitality-hero padding-y">
         <div className="container hero-grid">
           <div className="hero-content">
             <div className="page-name-wrapper">
-              <p className="page-name-text">AI recruiting for tech</p>
+              <p className="page-name-text">AI recruiting for manufacturing</p>
             </div>
             <h1 className="main-heading">
-              <span className="highlight">Ship Faster</span> With the Right
+              <span className="highlight">Keep Lines Running</span> With the
               <br />
-              People in Every Seat
+              Right People on Every Shift
             </h1>
             <p className="sub-text">
-              SorsX is an AI recruiting platform and AI interview software that
-              helps tech teams hire engineers, product managers, and talent
-              without drowning in unqualified applications.
+              SorsX is an AI hiring platform and AI interview software that
+              helps manufacturing plants staff operators, technicians, and
+              supervisors while maintaining safety and quality standards.
             </p>
             <div className="btn-wrapper">
               <Link href="demo_page_2.html">
@@ -32,31 +32,34 @@ const Tech = () => {
             </div>
           </div>
           <div className="hero-image-wrapper">
-            <img src="assets/tech/hero_img.png" alt="hospitality hero" />
+            <img
+              src="assets/manufacturing/hero_img.png"
+              alt="hospitality hero"
+            />
           </div>
         </div>
       </section>
 
       {/* <!-- slider  --> */}
-      <Slider />
+      <Slider bgColor="black" />
 
       {/* <!-- outreach section --> */}
       <section className="outreach-section">
         <div className="container outreach-container">
           <div className="outreach-image">
-            <img src="assets/tech/ai_hiring.png" alt="AI Hiring" />
+            <img src="assets/manufacturing/ai_hiring.png" alt="AI Hiring" />
           </div>
           <div className="outreach-content">
             <div className="page-name-text">
-              Standardize interviews for complex roles
+              Screen skills before candidates reach the plant
             </div>
             <h3 className="outreach-heading">
-              AI Hiring Software That Understands Skills, Stacks, and Seniority
+              AI Interview Software Built for Skilled and Semi-Skilled Roles
             </h3>
             <p className="outreach-description">
-              Use AI video interviews and structured scoring to compare
-              candidates fairly across teams, time zones, and seniority
-              levels—without relying on gut feel alone.
+              Use AI video interviews to assess reliability, basic technical
+              skills, and shift fit before candidates step onto the
+              floor—reducing turnover and training waste.
             </p>
           </div>
         </div>
@@ -67,39 +70,28 @@ const Tech = () => {
         <div className="container">
           <div className="section-header text-center">
             <h3 className="hiring-title">
-              Tech hiring that keeps up with product roadmaps
+              Manufacturing hiring for every part of your operation
             </h3>
             <p className="text-T1">
-              SorsX AI recruiting helps you build engineering, product, and
-              go-to-market teams without slowing releases.
+              SorsX AI recruiting helps you staff production, maintenance,
+              logistics, and quality roles without constant fire drills.
             </p>
           </div>
 
           <div className="hiring-grid">
-            {/* <!-- Hotels Card --> */}
-            <div className="hiring-card">
-              <div className="hiring-card-image">
-                <img src="assets/tech/saas.png" alt="SaaS" />
-              </div>
-              <div className="hiring-card-content">
-                <h6>SaaS</h6>
-                <p className="text-T1">
-                  Hire SaaS engineers, PMs, and CS leaders who can scale
-                  recurring revenue.
-                </p>
-              </div>
-            </div>
-
             {/* <!-- Restaurants Card --> */}
             <div className="hiring-card">
               <div className="hiring-card-image">
-                <img src="assets/tech/fintech.png" alt="Fintech" />
+                <img
+                  src="assets/manufacturing/automotive.png"
+                  alt="automotive"
+                />
               </div>
               <div className="hiring-card-content">
-                <h6>Fintech</h6>
+                <h6>Automotive</h6>
                 <p className="text-T1">
-                  Screen fintech talent for security, compliance, and complex
-                  financial-domain expertise.
+                  Keep automotive production lines staffed with vetted
+                  operators, assemblers, and supervisors.
                 </p>
               </div>
             </div>
@@ -107,13 +99,13 @@ const Tech = () => {
             {/* <!-- Resorts Card --> */}
             <div className="hiring-card">
               <div className="hiring-card-image">
-                <img src="assets/tech/startups.png" alt="Startups" />
+                <img src="assets/manufacturing/food.png" alt="food" />
               </div>
               <div className="hiring-card-content">
-                <h6>Startups</h6>
+                <h6>Food</h6>
                 <p className="text-T1">
-                  Move from seed to growth with a lean, AI-augmented recruiting
-                  engine.
+                  Hire food manufacturing staff who understand hygiene,
+                  compliance, and time-critical operations.
                 </p>
               </div>
             </div>
@@ -121,13 +113,30 @@ const Tech = () => {
             {/* <!-- Events Card --> */}
             <div className="hiring-card">
               <div className="hiring-card-image">
-                <img src="assets/tech/enterprise.png" alt="Enterprise" />
+                <img
+                  src="assets/manufacturing/electronics.png"
+                  alt="electronics"
+                />
               </div>
               <div className="hiring-card-content">
-                <h6>Enterprise</h6>
+                <h6>Electronics</h6>
                 <p className="text-T1">
-                  Staff enterprise transformation teams across product, data,
-                  security, and platform.
+                  Source electronics assemblers and technicians with consistent
+                  AI skill screening.
+                </p>
+              </div>
+            </div>
+
+            {/* <!-- logistic card  --> */}
+            <div className="hiring-card">
+              <div className="hiring-card-image">
+                <img src="assets/manufacturing/logistics.png" alt="logistics" />
+              </div>
+              <div className="hiring-card-content">
+                <h6>Logistics</h6>
+                <p className="text-T1">
+                  Staff warehouses and logistics hubs without sacrificing speed
+                  or candidate quality.
                 </p>
               </div>
             </div>
@@ -135,30 +144,35 @@ const Tech = () => {
 
           <div className="hiring-cta flex-center mt-3">
             <Link href="demo_page_1.html">
-              <button className="blue-button">See SorsX for Tech</button>
+              <button className="blue-button">
+                See SorsX for Manufacturing
+              </button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* <!-- tech teams section --> */}
+      {/* <!-- construction teams section --> */}
       <section className="feature-section padding-y">
         <div className="container feature-container flex-between gap-4">
           <div className="feature-content">
             <div className="page-name-text">
-              Hire faster, without lowering the bar
+              From constant shortages to stable staffing
             </div>
             <h3 className="feature-heading">
-              Give Your Tech Recruiting Team an AI Co-Pilot
+              Support Your Manufacturing Teams With an Always-On AI Recruiter
             </h3>
             <p className="feature-description">
-              SorsX automates resume review and AI interviews so your recruiting
-              and engineering leaders spend time calibrating on top
-              candidates—not manually screening long lists of profiles.
+              SorsX automates screening and AI interviews so you can keep shifts
+              fully staffed, reduce overtime, and protect throughput, even when
+              demand or labor markets are unpredictable.
             </p>
           </div>
           <div className="feature-image">
-            <img src="assets/tech/teams.png" alt="Tech Team" />
+            <img
+              src="assets/manufacturing/teams.png"
+              alt="manufacturing Team"
+            />
           </div>
         </div>
       </section>
@@ -166,4 +180,4 @@ const Tech = () => {
   );
 };
 
-export default Tech;
+export default Manufacturing;

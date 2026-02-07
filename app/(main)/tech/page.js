@@ -1,28 +1,27 @@
 import React from "react";
-import "./hospitality.css";
-import Link from "next/link";
+import "./tech.css";
 import Slider from "@/components/Slider/Slider";
+import Link from "next/link";
 
-const Hospitality = () => {
+const Tech = () => {
   return (
-    <div id="hospitality-page">
+    <div id="tech-page">
       {/* <!-- hero  --> */}
       <section className="hero-section hospitality-hero padding-y">
-        Name
         <div className="container hero-grid">
           <div className="hero-content">
             <div className="page-name-wrapper">
-              <p className="page-name-text">AI recruiting for hospitality</p>
+              <p className="page-name-text">AI recruiting for tech</p>
             </div>
             <h1 className="main-heading">
-              <span className="highlight">Keep Every</span> Shift Staffed
+              <span className="highlight">Ship Faster</span> With the Right
               <br />
-              With Confidence
+              People in Every Seat
             </h1>
             <p className="sub-text">
-              SorsX automates high-volume hospitality hiring with AI recruiting
-              and AI video interviews, so you staff every shift on time without
-              drowning in applications.
+              SorsX is an AI recruiting platform and AI interview software that
+              helps tech teams hire engineers, product managers, and talent
+              without drowning in unqualified applications.
             </p>
             <div className="btn-wrapper">
               <Link href="demo_page_2.html">
@@ -33,31 +32,31 @@ const Hospitality = () => {
             </div>
           </div>
           <div className="hero-image-wrapper">
-            <img src="assets/hospitality/hero_img.png" alt="hospitality hero" />
+            <img src="assets/tech/hero_img.png" alt="hospitality hero" />
           </div>
         </div>
       </section>
 
-      {/* slider */}
-      <Slider />
+      {/* <!-- slider  --> */}
+      <Slider bgColor="black" />
 
       {/* <!-- outreach section --> */}
       <section className="outreach-section">
         <div className="container outreach-container">
           <div className="outreach-image">
-            <img src="assets/hospitality/ai_hiring.png" alt="AI Hiring" />
+            <img src="assets/tech/ai_hiring.png" alt="AI Hiring" />
           </div>
           <div className="outreach-content">
             <div className="page-name-text">
-              Automate frontline screening, not the human touch
+              Standardize interviews for complex roles
             </div>
             <h3 className="outreach-heading">
-              AI Hiring Software Built for Busy Hotel and Restaurant Teams
+              AI Hiring Software That Understands Skills, Stacks, and Seniority
             </h3>
             <p className="outreach-description">
-              We evaluate every applicant with AI interviews, surface the best
-              talent for guest-facing roles, and help managers hire in minutes,
-              not weeks.
+              Use AI video interviews and structured scoring to compare
+              candidates fairly across teams, time zones, and seniority
+              levels—without relying on gut feel alone.
             </p>
           </div>
         </div>
@@ -68,11 +67,11 @@ const Hospitality = () => {
         <div className="container">
           <div className="section-header text-center">
             <h3 className="hiring-title">
-              Hospitality hiring that never sleeps
+              Tech hiring that keeps up with product roadmaps
             </h3>
-            <p className="section-description text-T1">
-              Use SorsX AI recruiting to keep hotels, restaurants, resorts, and
-              events fully staffed year-round.
+            <p className="text-T1">
+              SorsX AI recruiting helps you build engineering, product, and
+              go-to-market teams without slowing releases.
             </p>
           </div>
 
@@ -80,13 +79,13 @@ const Hospitality = () => {
             {/* <!-- Hotels Card --> */}
             <div className="hiring-card">
               <div className="hiring-card-image">
-                <img src="assets/hospitality/hotels.png" alt="Hotels" />
+                <img src="assets/tech/saas.png" alt="SaaS" />
               </div>
               <div className="hiring-card-content">
-                <h6>Hotels</h6>
+                <h6>SaaS</h6>
                 <p className="text-T1">
-                  Hire service-ready staff for front desk, housekeeping, and
-                  concierge roles faster.
+                  Hire SaaS engineers, PMs, and CS leaders who can scale
+                  recurring revenue.
                 </p>
               </div>
             </div>
@@ -94,16 +93,13 @@ const Hospitality = () => {
             {/* <!-- Restaurants Card --> */}
             <div className="hiring-card">
               <div className="hiring-card-image">
-                <img
-                  src="assets/hospitality/restuarants.png"
-                  alt="Restaurants"
-                />
+                <img src="assets/tech/fintech.png" alt="Fintech" />
               </div>
               <div className="hiring-card-content">
-                <h6>Restaurants</h6>
+                <h6>Fintech</h6>
                 <p className="text-T1">
-                  Screen servers, hosts, and kitchen staff with consistent AI
-                  video interviews.
+                  Screen fintech talent for security, compliance, and complex
+                  financial-domain expertise.
                 </p>
               </div>
             </div>
@@ -111,13 +107,13 @@ const Hospitality = () => {
             {/* <!-- Resorts Card --> */}
             <div className="hiring-card">
               <div className="hiring-card-image">
-                <img src="assets/hospitality/resorts.png" alt="Resorts" />
+                <img src="assets/tech/startups.png" alt="Startups" />
               </div>
               <div className="hiring-card-content">
-                <h6>Resorts</h6>
+                <h6>Startups</h6>
                 <p className="text-T1">
-                  Build pools of seasonal resort talent before peak travel
-                  periods hit.
+                  Move from seed to growth with a lean, AI-augmented recruiting
+                  engine.
                 </p>
               </div>
             </div>
@@ -125,13 +121,13 @@ const Hospitality = () => {
             {/* <!-- Events Card --> */}
             <div className="hiring-card">
               <div className="hiring-card-image">
-                <img src="assets/hospitality/events.png" alt="Events" />
+                <img src="assets/tech/enterprise.png" alt="Enterprise" />
               </div>
               <div className="hiring-card-content">
-                <h6>Events</h6>
+                <h6>Enterprise</h6>
                 <p className="text-T1">
-                  Staff event coordinators, bartenders, and support crews
-                  quickly for every function.
+                  Staff enterprise transformation teams across product, data,
+                  security, and platform.
                 </p>
               </div>
             </div>
@@ -139,31 +135,30 @@ const Hospitality = () => {
 
           <div className="hiring-cta flex-center mt-3">
             <Link href="demo_page_1.html">
-              <button className="blue-button">See SorsX for Hospitality</button>
+              <button className="blue-button">See SorsX for Tech</button>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* <!-- teams section --> */}
+      {/* <!-- tech teams section --> */}
       <section className="feature-section padding-y">
         <div className="container feature-container flex-between gap-4">
           <div className="feature-content">
             <div className="page-name-text">
-              Less chaos. More staffed shifts
+              Hire faster, without lowering the bar
             </div>
             <h3 className="feature-heading">
-              Give Your Hospitality Teams an AI Recruiting Co-Pilot
+              Give Your Tech Recruiting Team an AI Co-Pilot
             </h3>
             <p className="feature-description">
-              SorsX cuts time-to-fill for hospitality roles by automating
-              screening, AI interviews, and shortlists, so you maintain guest
-              satisfaction, protect revenue, and reduce burnout for overworked
-              managers.
+              SorsX automates resume review and AI interviews so your recruiting
+              and engineering leaders spend time calibrating on top
+              candidates—not manually screening long lists of profiles.
             </p>
           </div>
           <div className="feature-image">
-            <img src="assets/hospitality/teams.png" alt="Hospitality Team" />
+            <img src="assets/tech/teams.png" alt="Tech Team" />
           </div>
         </div>
       </section>
@@ -171,4 +166,4 @@ const Hospitality = () => {
   );
 };
 
-export default Hospitality;
+export default Tech;

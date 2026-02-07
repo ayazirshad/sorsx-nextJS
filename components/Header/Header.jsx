@@ -3,8 +3,9 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Header.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useLanguageSwitcher } from "../../hooks/useLanguageSwitcher";
 
-const Header = ({ isTrPage }) => {
+const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,6 +16,12 @@ const Header = ({ isTrPage }) => {
   useEffect(() => {
     setOpenDropdown(null);
     setMenuOpen(false);
+  }, [pathname]);
+
+  const { setLanguage, checkLanguage } = useLanguageSwitcher();
+
+  useEffect(() => {
+    checkLanguage();
   }, [pathname]);
 
   useEffect(() => {
@@ -30,6 +37,8 @@ const Header = ({ isTrPage }) => {
       }
     };
     document.addEventListener("click", handleOutside);
+    return () => document.removeEventListener("click", handleOutside);
+    return () => document.removeEventListener("click", handleOutside);
     return () => document.removeEventListener("click", handleOutside);
   }, []);
 
@@ -47,7 +56,7 @@ const Header = ({ isTrPage }) => {
         <div className="logo-wrapper">
           <Link href="/">
             <img
-              src="assets/index/SorsX-Logo-Black.png"
+              src="/assets/index/SorsX-Logo-Black.png"
               alt="logo"
               className="logo"
             />
@@ -65,7 +74,7 @@ const Header = ({ isTrPage }) => {
             >
               <p className="text-B2">Platform</p>
               <img
-                src="assets/index/drop_down_icon.png"
+                src="/assets/index/drop_down_icon.png"
                 alt="Toggle"
                 className="dropdown-icon"
               />
@@ -76,7 +85,7 @@ const Header = ({ isTrPage }) => {
                 <div className="mega-menu-column">
                   <Link href="/sorsx_ai" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/sorsx ai.png"
+                      src="/assets/index/nav_icons/sorsx ai.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -90,7 +99,7 @@ const Header = ({ isTrPage }) => {
 
                   <Link href="/sorsx_next" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/sorsx next.png"
+                      src="/assets/index/nav_icons/sorsx next.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -104,7 +113,7 @@ const Header = ({ isTrPage }) => {
 
                   <Link href="/ai_ats_crm" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/ai ats crm.png"
+                      src="/assets/index/nav_icons/ai ats crm.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -120,7 +129,7 @@ const Header = ({ isTrPage }) => {
                 <div className="mega-menu-column">
                   <Link href="/sorsx_hire" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/scale hire.png"
+                      src="/assets/index/nav_icons/scale hire.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -134,7 +143,7 @@ const Header = ({ isTrPage }) => {
 
                   <Link href="/ai_interviewer" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/ai interviewer.png"
+                      src="/assets/index/nav_icons/ai interviewer.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -148,7 +157,7 @@ const Header = ({ isTrPage }) => {
 
                   <Link href="/demo_page_1" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/demo.png"
+                      src="/assets/index/nav_icons/demo.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -165,6 +174,7 @@ const Header = ({ isTrPage }) => {
           </div>
 
           {/* ================= INDUSTRIES ================= */}
+
           <div
             className={`dropdown ${openDropdown === "industries" ? "open" : ""}`}
           >
@@ -174,7 +184,7 @@ const Header = ({ isTrPage }) => {
             >
               <p className="text-B2">Industries</p>
               <img
-                src="assets/index/drop_down_icon.png"
+                src="/assets/index/drop_down_icon.png"
                 alt="Toggle"
                 className="dropdown-icon"
               />
@@ -186,7 +196,7 @@ const Header = ({ isTrPage }) => {
                 <div className="mega-menu-column">
                   <Link href="/hospitality" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/hospitality.png"
+                      src="/assets/index/nav_icons/hospitality.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -199,7 +209,7 @@ const Header = ({ isTrPage }) => {
                   </Link>
                   <Link href="/construction" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/construction.png"
+                      src="/assets/index/nav_icons/construction.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -212,7 +222,7 @@ const Header = ({ isTrPage }) => {
                   </Link>
                   <Link href="/tech" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/tech.png"
+                      src="/assets/index/nav_icons/tech.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -229,7 +239,7 @@ const Header = ({ isTrPage }) => {
                 <div className="mega-menu-column">
                   <Link href="/manufacturing" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/manufacturing.png"
+                      src="/assets/index/nav_icons/manufacturing.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -242,7 +252,7 @@ const Header = ({ isTrPage }) => {
                   </Link>
                   <Link href="/professional" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/professional.png"
+                      src="/assets/index/nav_icons/professional.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -257,7 +267,7 @@ const Header = ({ isTrPage }) => {
                   </Link>
                   <Link href="/healthcare" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/healthcare.png"
+                      src="/assets/index/nav_icons/healthcare.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -283,7 +293,7 @@ const Header = ({ isTrPage }) => {
             >
               <p className="text-B2">Business Size</p>
               <img
-                src="assets/index/drop_down_icon.png"
+                src="/assets/index/drop_down_icon.png"
                 alt="Toggle"
                 className="dropdown-icon"
               />
@@ -295,7 +305,7 @@ const Header = ({ isTrPage }) => {
                 <div className="mega-menu-column">
                   <Link href="/small_businesses" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/small.png"
+                      src="/assets/index/nav_icons/small.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -308,9 +318,10 @@ const Header = ({ isTrPage }) => {
                       </p>
                     </div>
                   </Link>
+
                   <Link href="/midsize_businesses" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/midsize.png"
+                      src="/assets/index/nav_icons/midsize.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -323,9 +334,10 @@ const Header = ({ isTrPage }) => {
                       </p>
                     </div>
                   </Link>
+
                   <Link href="/enterprise" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/enterprise.png"
+                      src="/assets/index/nav_icons/enterprise.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -342,6 +354,7 @@ const Header = ({ isTrPage }) => {
           </div>
 
           {/* ================= COMPANY ================= */}
+
           <div
             className={`dropdown ${openDropdown === "company" ? "open" : ""}`}
           >
@@ -351,7 +364,7 @@ const Header = ({ isTrPage }) => {
             >
               <p className="text-B2">Company</p>
               <img
-                src="assets/index/drop_down_icon.png"
+                src="/assets/index/drop_down_icon.png"
                 alt="Toggle"
                 className="dropdown-icon"
               />
@@ -363,7 +376,7 @@ const Header = ({ isTrPage }) => {
                 <div className="mega-menu-column">
                   {/* <!-- <a href="/about_us" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/about us.png"
+                      src="/assets/index/nav_icons/about us.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -374,7 +387,7 @@ const Header = ({ isTrPage }) => {
                   </a> --> */}
                   <Link href="/sorsx_blog" className="mega-menu-item">
                     <img
-                      src="assets/index/nav_icons/newsroom.png"
+                      src="/assets/index/nav_icons/newsroom.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -390,7 +403,7 @@ const Header = ({ isTrPage }) => {
                     target="blank"
                   >
                     <img
-                      src="assets/index/nav_icons/about us.png"
+                      src="/assets/index/nav_icons/about us.png"
                       alt="icon"
                       className="mega-menu-icon"
                     />
@@ -409,7 +422,7 @@ const Header = ({ isTrPage }) => {
             <div className="dropdown choose-language">
               <button className="dropdown-toggle">
                 <img
-                  src="assets/index/globe_01.png"
+                  src="/assets/index/globe_01.png"
                   alt="globe"
                   className="dropdown-icon"
                 />
@@ -418,17 +431,25 @@ const Header = ({ isTrPage }) => {
               <div className="dropdown-menu mega-menu">
                 <div className="mega-menu-grid">
                   <div className="mega-menu-column">
-                    <button className="choose-lang-button" id="lang-eng-m">
+                    <button
+                      className="choose-lang-button"
+                      id="lang-eng-m"
+                      onClick={() => setLanguage("en")}
+                    >
                       <img
-                        src="assets/index/eng_flag.png"
+                        src="/assets/index/eng_flag.png"
                         alt="eng lang"
                         className="language-flag"
                       />
                       <p className="text-B2">ENG</p>
                     </button>
-                    <button className="choose-lang-button" id="lang-tr-m">
+                    <button
+                      className="choose-lang-button"
+                      id="lang-tr-m"
+                      onClick={() => setLanguage("tr")}
+                    >
                       <img
-                        src="assets/index/tr_flag.png"
+                        src="/assets/index/tr_flag.png"
                         alt="tr lang"
                         className="language-flag"
                       />
@@ -456,7 +477,7 @@ const Header = ({ isTrPage }) => {
         <div className="cta-btn-desktop">
           {/* <!-- <button className="dropdown-toggle">
             <img
-              src="assets/index/globe_01.png"
+              src="/assets/index/globe_01.png"
               alt="globe"
               className="dropdown-icon"
             />
@@ -469,7 +490,7 @@ const Header = ({ isTrPage }) => {
               onClick={(e) => toggleDropdown("chooseLang", e)}
             >
               <img
-                src="assets/index/globe_01.png"
+                src="/assets/index/globe_01.png"
                 alt="globe"
                 className="dropdown-icon"
               />
@@ -477,17 +498,25 @@ const Header = ({ isTrPage }) => {
             <div className="dropdown-menu mega-menu">
               <div className="mega-menu-grid">
                 <div className="mega-menu-column">
-                  <button className="choose-lang-button" id="lang-eng">
+                  <button
+                    className="choose-lang-button"
+                    id="lang-eng"
+                    onClick={() => setLanguage("en")}
+                  >
                     <img
-                      src="assets/index/eng_flag.png"
+                      src="/assets/index/eng_flag.png"
                       alt="eng lang"
                       className="language-flag"
                     />
                     <p className="text-B2">ENG</p>
                   </button>
-                  <button className="choose-lang-button" id="lang-tr">
+                  <button
+                    className="choose-lang-button"
+                    id="lang-tr"
+                    onClick={() => setLanguage("tr")}
+                  >
                     <img
-                      src="assets/index/tr_flag.png"
+                      src="/assets/index/tr_flag.png"
                       alt="tr lang"
                       className="language-flag"
                     />
@@ -519,7 +548,9 @@ const Header = ({ isTrPage }) => {
           onClick={() => setMenuOpen((p) => !p)}
         >
           <img
-            src={menuOpen ? "assets/index/close.svg" : "assets/index/menu.svg"}
+            src={
+              menuOpen ? "/assets/index/close.svg" : "/assets/index/menu.svg"
+            }
             alt="Menu"
             id="menuIcon"
           />

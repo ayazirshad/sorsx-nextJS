@@ -809,7 +809,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../public/assets/ai_interviewer/request_demo_bg.svg");
+  background-image: url("/assets/ai_interviewer/request_demo_bg.svg");
   background-size: cover;
   background-position: center;
   pointer-events: none;

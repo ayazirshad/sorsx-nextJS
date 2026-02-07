@@ -14,8 +14,6 @@ export default function Home() {
   };
   return (
     <div id="home-page">
-      <Header />
-
       {/* <!-- hero  --> */}
       <section className="hero-section hospitality-hero padding-y">
         <div className="container hero-grid">
@@ -942,8 +940,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

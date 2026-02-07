@@ -1,27 +1,27 @@
-import Slider from "@/components/Slider/Slider";
 import React from "react";
-import "./manufacturing.css";
+import "./construction.css";
+import Slider from "@/components/Slider/Slider";
 import Link from "next/link";
 
-const Manufacturing = () => {
+const Construction = () => {
   return (
-    <div id="manufacturing-page">
+    <div id="construction-page">
       {/* <!-- hero  --> */}
       <section className="hero-section hospitality-hero padding-y">
         <div className="container hero-grid">
           <div className="hero-content">
             <div className="page-name-wrapper">
-              <p className="page-name-text">AI recruiting for manufacturing</p>
+              <p className="page-name-text">AI recruiting for construction</p>
             </div>
             <h1 className="main-heading">
-              <span className="highlight">Keep Lines Running</span> With the
+              <span className="highlight">Keep Every</span> Project Fully
               <br />
-              Right People on Every Shift
+              Staffed and On Schedule
             </h1>
             <p className="sub-text">
-              SorsX is an AI hiring platform and AI interview software that
-              helps manufacturing plants staff operators, technicians, and
-              supervisors while maintaining safety and quality standards.
+              SorsX is an AI recruiting platform for construction teams, using
+              AI interviews to quickly vet tradespeople, foremen, and project
+              staff before they step on site.
             </p>
             <div className="btn-wrapper">
               <Link href="demo_page_2.html">
@@ -33,7 +33,7 @@ const Manufacturing = () => {
           </div>
           <div className="hero-image-wrapper">
             <img
-              src="assets/manufacturing/hero_img.png"
+              src="assets/construction/hero_img.png"
               alt="hospitality hero"
             />
           </div>
@@ -41,25 +41,25 @@ const Manufacturing = () => {
       </section>
 
       {/* <!-- slider  --> */}
-      <Slider />
+      <Slider bgColor="black" />
 
       {/* <!-- outreach section --> */}
       <section className="outreach-section">
         <div className="container outreach-container">
           <div className="outreach-image">
-            <img src="assets/manufacturing/ai_hiring.png" alt="AI Hiring" />
+            <img src="assets/construction/ai_hiring.png" alt="AI Hiring" />
           </div>
           <div className="outreach-content">
             <div className="page-name-text">
-              Screen skills before candidates reach the plant
+              Screen trades in hours, not weeks
             </div>
             <h3 className="outreach-heading">
-              AI Interview Software Built for Skilled and Semi-Skilled Roles
+              AI Hiring Software Built for Field and Office Roles
             </h3>
             <p className="outreach-description">
-              Use AI video interviews to assess reliability, basic technical
-              skills, and shift fit before candidates step onto the
-              floor—reducing turnover and training waste.
+              Evaluate every applicant with AI video interviews, standardize
+              safety and experience questions, and deliver shortlists your
+              superintendents and project managers actually trust.
             </p>
           </div>
         </div>
@@ -70,28 +70,45 @@ const Manufacturing = () => {
         <div className="container">
           <div className="section-header text-center">
             <h3 className="hiring-title">
-              Manufacturing hiring for every part of your operation
+              Construction hiring for every job site
             </h3>
             <p className="text-T1">
-              SorsX AI recruiting helps you staff production, maintenance,
-              logistics, and quality roles without constant fire drills.
+              Use SorsX AI recruiting to staff field crews, office teams, and
+              specialty contractors with less downtime.
             </p>
           </div>
 
           <div className="hiring-grid">
+            {/* <!-- Hotels Card --> */}
+            <div className="hiring-card">
+              <div className="hiring-card-image">
+                <img
+                  src="assets/construction/commercial.png"
+                  alt="Commercial"
+                />
+              </div>
+              <div className="hiring-card-content">
+                <h6>Commercial</h6>
+                <p className="text-T1">
+                  Staff commercial projects with vetted trades, estimators, and
+                  site supervisors faster.
+                </p>
+              </div>
+            </div>
+
             {/* <!-- Restaurants Card --> */}
             <div className="hiring-card">
               <div className="hiring-card-image">
                 <img
-                  src="assets/manufacturing/automotive.png"
-                  alt="automotive"
+                  src="assets/construction/residentials.png"
+                  alt="Residentials"
                 />
               </div>
               <div className="hiring-card-content">
-                <h6>Automotive</h6>
+                <h6>Residential</h6>
                 <p className="text-T1">
-                  Keep automotive production lines staffed with vetted
-                  operators, assemblers, and supervisors.
+                  Fill residential crews quickly with reliable carpenters,
+                  electricians, and plumbers.
                 </p>
               </div>
             </div>
@@ -99,13 +116,16 @@ const Manufacturing = () => {
             {/* <!-- Resorts Card --> */}
             <div className="hiring-card">
               <div className="hiring-card-image">
-                <img src="assets/manufacturing/food.png" alt="food" />
+                <img
+                  src="assets/construction/infrastructure.png"
+                  alt="infrastructure"
+                />
               </div>
               <div className="hiring-card-content">
-                <h6>Food</h6>
+                <h6>Infrastructure</h6>
                 <p className="text-T1">
-                  Hire food manufacturing staff who understand hygiene,
-                  compliance, and time-critical operations.
+                  Keep infrastructure and civil jobs fully staffed across long
+                  project timelines.
                 </p>
               </div>
             </div>
@@ -114,29 +134,15 @@ const Manufacturing = () => {
             <div className="hiring-card">
               <div className="hiring-card-image">
                 <img
-                  src="assets/manufacturing/electronics.png"
-                  alt="electronics"
+                  src="assets/construction/industrial.png"
+                  alt="industries"
                 />
               </div>
               <div className="hiring-card-content">
-                <h6>Electronics</h6>
+                <h6>Industrial</h6>
                 <p className="text-T1">
-                  Source electronics assemblers and technicians with consistent
-                  AI skill screening.
-                </p>
-              </div>
-            </div>
-
-            {/* <!-- logistic card  --> */}
-            <div className="hiring-card">
-              <div className="hiring-card-image">
-                <img src="assets/manufacturing/logistics.png" alt="logistics" />
-              </div>
-              <div className="hiring-card-content">
-                <h6>Logistics</h6>
-                <p className="text-T1">
-                  Staff warehouses and logistics hubs without sacrificing speed
-                  or candidate quality.
+                  Source industrial maintenance and plant technicians before
+                  equipment downtime spikes.
                 </p>
               </div>
             </div>
@@ -145,7 +151,7 @@ const Manufacturing = () => {
           <div className="hiring-cta flex-center mt-3">
             <Link href="demo_page_1.html">
               <button className="blue-button">
-                See SorsX for Manufacturing
+                See SorsX for Construction
               </button>
             </Link>
           </div>
@@ -157,22 +163,19 @@ const Manufacturing = () => {
         <div className="container feature-container flex-between gap-4">
           <div className="feature-content">
             <div className="page-name-text">
-              From constant shortages to stable staffing
+              From labor gaps to staffed crews
             </div>
             <h3 className="feature-heading">
-              Support Your Manufacturing Teams With an Always-On AI Recruiter
+              Give Your Construction Hiring Teams an AI Edge
             </h3>
             <p className="feature-description">
-              SorsX automates screening and AI interviews so you can keep shifts
-              fully staffed, reduce overtime, and protect throughput, even when
-              demand or labor markets are unpredictable.
+              SorsX automates screening and AI interviews so you fill critical
+              construction roles faster, reduce costly delays, and keep both
+              field and office teams focused on delivering projects.
             </p>
           </div>
           <div className="feature-image">
-            <img
-              src="assets/manufacturing/teams.png"
-              alt="manufacturing Team"
-            />
+            <img src="assets/construction/teams.png" alt="Construction Team" />
           </div>
         </div>
       </section>
@@ -180,4 +183,4 @@ const Manufacturing = () => {
   );
 };
 
-export default Manufacturing;
+export default Construction;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "../Footer/Footer.css";
 import Link from "next/link";
 
 const Footer = () => {
@@ -22,42 +22,10 @@ const Footer = () => {
           </div>
           <div className="footer-links-grid">
             <div className="footer-column">
-              <h4 className="footer-heading">Industries</h4>
-              <ul className="footer-links">
-                <li>
-                  <Link href="/hospitality">Hospitality</Link>
-                </li>
-                <li>
-                  <Link href="/construction">Construction</Link>
-                </li>
-                <li>
-                  <Link href="/tech">Tech</Link>
-                </li>
-                <li>
-                  <Link href="/manufacturing">Manufacturing</Link>
-                </li>
-                <li>
-                  <Link href="/professional">Professional Services</Link>
-                </li>
-                <li>
-                  <Link href="/healthcare">Healthcare</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="footer-column">
               <h4 className="footer-heading">Business Size</h4>
               <ul className="footer-links">
                 <li>
-                  <Link href="/small_businesses">Small Businesses</Link>
-                </li>
-
-                <li>
                   <Link href="/midsize_businesses">Midsize Businesses</Link>
-                </li>
-
-                <li>
-                  <Link href="/enterprise">Enterprise</Link>
                 </li>
               </ul>
             </div>
@@ -65,39 +33,10 @@ const Footer = () => {
               <h4 className="footer-heading">Platform</h4>
               <ul className="footer-links">
                 <li>
-                  <Link href="/sorsx_ai">SorsX AI</Link>
-                </li>
-
-                <li>
                   <Link href="/sorsx_hire">SorsX Hire</Link>
                 </li>
                 <li>
                   <Link href="/ai_interviewer">AI Interviewer</Link>
-                </li>
-
-                <li>
-                  <Link href="/sorsx_next">SorsX Next</Link>
-                </li>
-                <li>
-                  <Link href="/ai_ats_crm">AI ATS & CRM</Link>
-                </li>
-
-                {/* <li><a href="/demo_page_2">Demo</a></li> */}
-              </ul>
-            </div>
-
-            <div className="footer-column">
-              <h4 className="footer-heading">Company</h4>
-              <ul className="footer-links">
-                {/* <li><a href="/about_us">About Us</a></li> */}
-                <li>
-                  {/* <Link href="/careers">Careers</Link> */}
-                  <Link href="https://www.sorsx.com/company/82e35e93-2965-4fdb-877b-01c265c6cca3/sorsx">
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/sorsx_blog">Newsroom</Link>
                 </li>
               </ul>
             </div>

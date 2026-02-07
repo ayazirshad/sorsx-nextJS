@@ -1,6 +1,7 @@
 import FAQs from "@/components/FAQs/FAQs";
 import React from "react";
 import "./midsize_businesses.css";
+import Slider from "@/components/Slider/Slider";
 
 const MidsizeBusinesses = () => {
   const faqs = [
@@ -66,6 +67,9 @@ const MidsizeBusinesses = () => {
           </div>
         </div>
       </section>
+
+      {/* slider */}
+      <Slider bgColor="black" />
 
       {/* <!-- outreach section --> */}
       <section className="info-section outreach-section padding-y">

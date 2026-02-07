@@ -43,7 +43,7 @@ const Professional = () => {
       </section>
 
       {/* <!-- slider  --> */}
-      <Slider />
+      <Slider bgColor="black" />
 
       {/* <!-- outreach section --> */}
       <section className="outreach-section">
