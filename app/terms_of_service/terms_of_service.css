@@ -1,0 +1,198 @@
+/* ========== TERMS CONTENT ========== */
+.terms-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.terms-header {
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+
+@media (max-width: 768px) {
+  .terms-header {
+    margin: 2rem 0;
+  }
+}
+
+.terms-header h1 {
+  /* font-size: 48px; */
+  /* font-weight: 700; */
+  color: #181d27;
+  margin-bottom: 1rem;
+
+  /* font-weight: 700; */
+  font-size: clamp(40px, 3.23vw, 64px);
+  line-height: 120%;
+
+  /* color: #000; */
+  text-align: center;
+  /* text-shadow: 0px 2px 20.5px rgba(0, 0, 0, 0.1); */
+}
+
+.terms-section {
+  margin-bottom: 3rem;
+}
+
+.terms-section h3 {
+  font-size: clamp(28px, 2.3vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-blue);
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.terms-section h4 {
+  font-size: clamp(24px, 1.8vw, 40px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-blue);
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.terms-section p {
+  font-family: var(--font-inter);
+  font-size: clamp(16px, 1.1vw, 18px);
+  color: #535862;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+.terms-section ul {
+  list-style: disc;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.terms-section li {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  color: #535862;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .toggle-btn {
+    display: block;
+  }
+  /* .nav-links {
+    display: none;
+  }  */
+
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .terms-section h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .terms-section h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .terms-section p {
+    margin-bottom: 1rem;
+  }
+
+  .terms-section {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ========== OPT-OUT FORM DESIGN ========== */
+.optout-form {
+  background: rgba(248, 251, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 28px;
+  box-shadow: 0 0 55.7px 0 rgba(126, 168, 251, 0.4);
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  text-align: left;
+}
+
+.optout-form .form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.optout-form .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 0; /* Override default if any */
+}
+
+.optout-form label {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 500;
+  color: #344054;
+  margin-bottom: 4px;
+}
+
+.optout-form input {
+  padding: 13px;
+  border: 1px solid #d0d5dd;
+  border-radius: 16px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.optout-form input:focus {
+  border-color: #6b65e8;
+  box-shadow: 0 0 0 4px rgba(107, 101, 232, 0.1);
+}
+
+.optout-form .form-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.optout-form .zero-margin {
+  margin: 0 !important;
+}
+
+.optout-form .blue-border-button p {
+  margin: 0;
+  color: #fff;
+}
+
+/* Mobile Responsive for Form */
+@media (max-width: 768px) {
+  .optout-form {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .optout-form .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .optout-form .form-footer {
+    justify-content: center;
+  }
+
+  .optout-form .blue-border-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

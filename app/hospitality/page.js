@@ -9,30 +9,30 @@ const Hospitality = () => {
       {/* <!-- hero  --> */}
       <section className="hero-section hospitality-hero padding-y">
         Name
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <div class="page-name-wrapper">
-              <p class="page-name-text">AI recruiting for hospitality</p>
+        <div className="container hero-grid">
+          <div className="hero-content">
+            <div className="page-name-wrapper">
+              <p className="page-name-text">AI recruiting for hospitality</p>
             </div>
-            <h1 class="main-heading">
-              <span class="highlight">Keep Every</span> Shift Staffed
+            <h1 className="main-heading">
+              <span className="highlight">Keep Every</span> Shift Staffed
               <br />
               With Confidence
             </h1>
-            <p class="sub-text">
+            <p className="sub-text">
               SorsX automates high-volume hospitality hiring with AI recruiting
               and AI video interviews, so you staff every shift on time without
               drowning in applications.
             </p>
-            <div class="btn-wrapper">
+            <div className="btn-wrapper">
               <Link href="demo_page_2.html">
-                <button class="blue-border-button">
+                <button className="blue-border-button">
                   <p>Request a demo</p>
                 </button>
               </Link>
             </div>
           </div>
-          <div class="hero-image-wrapper">
+          <div className="hero-image-wrapper">
             <img src="assets/hospitality/hero_img.png" alt="hospitality hero" />
           </div>
         </div>
