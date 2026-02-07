@@ -13,6 +13,7 @@
   align-items: center;
   z-index: 50;
   position: fixed;
+  background-color: #ffffff;
 }
 
 .navbar.navbar--scrolled {
