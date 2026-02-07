@@ -36,8 +36,8 @@ const FAQs = ({ faqsData }) => {
                   <img
                     src={
                       activeIndex === index
-                        ? "assets/index/minus_icon.png"
-                        : "assets/index/plus_icon.png"
+                        ? "/assets/index/minus_icon.png"
+                        : "/assets/index/plus_icon.png"
                     }
                     alt="toggle"
                     className="faq-icon"
