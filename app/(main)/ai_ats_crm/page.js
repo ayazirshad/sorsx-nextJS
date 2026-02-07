@@ -56,7 +56,7 @@ const AiAtsCrm = () => {
             tasks, and follow-ups while fitting your HR stack.
           </p>
           <div className="btn-wrapper">
-            <Link href="demo_page_2.html">
+            <Link href="/demo_page_2">
               <button className="blue-border-button">
                 <p>Request a demo</p>
               </button>
@@ -135,7 +135,7 @@ const AiAtsCrm = () => {
               what’s next, so offers move faster.
             </p>
             <div className="mt-3">
-              <Link href="demo_page_1.html">
+              <Link href="/demo_page_1">
                 <button className="white-button">See AI ATS in action</button>
               </Link>
             </div>

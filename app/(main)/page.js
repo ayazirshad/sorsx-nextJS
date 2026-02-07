@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import "./homePage.css";
 import { useState } from "react";
 import Slider from "@/components/Slider/Slider";
+import Link from "next/link";
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -29,11 +30,11 @@ export default function Home() {
               85%.
             </p>
             <div className="btn-wrapper">
-              <a href="demo_page_2.html">
+              <Link href="/demo_page_2">
                 <button className="blue-border-button">
                   <p>Request a demo</p>
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="hero-trust-logos">
               <img src="assets/index/capterra.png" alt="Capterra" />
@@ -90,9 +91,9 @@ export default function Home() {
               </p>
             </div>
             <div className="header-right">
-              <a href="demo_page_1.html">
+              <Link href="/demo_page_1">
                 <button className="white-button">Learn More</button>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -116,7 +117,7 @@ export default function Home() {
                   <div className="info">
                     <p className="hire-smarter">Hire smarter for:</p>
                     <ul className="industry-bullets">
-                      <a href="tech.html">
+                      <Link href="/tech">
                         <li className="bullet-item">
                           <span>SaaS</span>
                           <img
@@ -125,8 +126,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="tech.html">
+                      </Link>
+                      <Link href="/tech">
                         <li className="bullet-item">
                           <span>Fintech</span>
                           <img
@@ -135,8 +136,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="tech.html">
+                      </Link>
+                      <Link href="/tech">
                         <li className="bullet-item">
                           <span>Startups</span>
                           <img
@@ -145,8 +146,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="tech.html">
+                      </Link>
+                      <Link href="/tech">
                         <li className="bullet-item">
                           <span>Enterprise</span>
                           <img
@@ -155,7 +156,7 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
+                      </Link>
                     </ul>
                   </div>
 
@@ -206,7 +207,7 @@ export default function Home() {
                 <div className="overlay-info">
                   <div className="info">
                     <ul className="industry-bullets">
-                      <a href="manufacturing.html">
+                      <Link href="/manufacturing">
                         <li className="bullet-item">
                           <span>Automotive</span>
                           <img
@@ -215,8 +216,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="manufacturing.html">
+                      </Link>
+                      <Link href="/manufacturing">
                         <li className="bullet-item">
                           <span>Food</span>
                           <img
@@ -225,8 +226,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="manufacturing.html">
+                      </Link>
+                      <Link href="/manufacturing">
                         <li className="bullet-item">
                           <span>Electronics</span>
                           <img
@@ -235,8 +236,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="manufacturing.html">
+                      </Link>
+                      <Link href="/manufacturing">
                         <li className="bullet-item">
                           <span>Logistics</span>
                           <img
@@ -245,7 +246,7 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
+                      </Link>
                     </ul>
                   </div>
 
@@ -286,7 +287,7 @@ export default function Home() {
                 <div className="overlay-info">
                   <div className="info">
                     <ul className="industry-bullets">
-                      <a href="hospitality.html">
+                      <Link href="/hospitality">
                         <li className="bullet-item">
                           <span>Hotels</span>
                           <img
@@ -295,8 +296,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="hospitality.html">
+                      </Link>
+                      <Link href="/hospitality">
                         <li className="bullet-item">
                           <span>Restaurants</span>
                           <img
@@ -305,8 +306,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="hospitality.html">
+                      </Link>
+                      <Link href="/hospitality">
                         <li className="bullet-item">
                           <span>Resorts</span>
                           <img
@@ -315,8 +316,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="hospitality.html">
+                      </Link>
+                      <Link href="/hospitality">
                         <li className="bullet-item">
                           <span>Events</span>
                           <img
@@ -325,7 +326,7 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
+                      </Link>
                     </ul>
                   </div>
 
@@ -365,7 +366,7 @@ export default function Home() {
                 <div className="overlay-info">
                   <div className="info">
                     <ul className="industry-bullets">
-                      <a href="construction.html">
+                      <Link href="/construction">
                         <li className="bullet-item">
                           <span>Commercial</span>
                           <img
@@ -374,8 +375,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="construction.html">
+                      </Link>
+                      <Link href="/construction">
                         <li className="bullet-item">
                           <span>Residential</span>
                           <img
@@ -384,8 +385,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="construction.html">
+                      </Link>
+                      <Link href="/construction">
                         <li className="bullet-item">
                           <span>Infrastructure</span>
                           <img
@@ -394,8 +395,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="construction.html">
+                      </Link>
+                      <Link href="/construction">
                         <li className="bullet-item">
                           <span>Industrial</span>
                           <img
@@ -404,7 +405,7 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
+                      </Link>
                     </ul>
                   </div>
 
@@ -447,7 +448,7 @@ export default function Home() {
                 <div className="overlay-info">
                   <div className="info">
                     <ul className="industry-bullets">
-                      <a href="healthcare.html">
+                      <Link href="/healthcare">
                         <li className="bullet-item">
                           <span>Hospitals</span>
                           <img
@@ -456,8 +457,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="healthcare.html">
+                      </Link>
+                      <Link href="/healthcare">
                         <li className="bullet-item">
                           <span>Clinics</span>
                           <img
@@ -466,8 +467,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="healthcare.html">
+                      </Link>
+                      <Link href="/healthcare">
                         <li className="bullet-item">
                           <span>Long-Term</span>
                           <img
@@ -476,8 +477,8 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
-                      <a href="healthcare.html">
+                      </Link>
+                      <Link href="/healthcare">
                         <li className="bullet-item">
                           <span>Admin</span>
                           <img
@@ -486,7 +487,7 @@ export default function Home() {
                             className="arrow-icon"
                           />
                         </li>
-                      </a>
+                      </Link>
                     </ul>
                   </div>
 
@@ -527,11 +528,11 @@ export default function Home() {
               platform for modern HR and recruiting teams.
             </p>
             <div className="btn-wrapper">
-              <a href="demo_page_1.html">
+              <Link href="/demo_page_1">
                 <button className="blue-border-button">
                   <p>Request a demo</p>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -580,10 +581,10 @@ export default function Home() {
                   </span>
                 </li>
               </ul>
-              <a href="sorsx_ai.html" className="learn-more text-T1">
+              <Link href="/sorsx_ai" className="learn-more text-T1">
                 Learn more
                 <img src="assets/index/arrow-right-dark.svg" alt="arrow" />
-              </a>
+              </Link>
             </div>
 
             <div className="platform-card">
@@ -627,10 +628,10 @@ export default function Home() {
                   </span>
                 </li>
               </ul>
-              <a href="sorsx_hire.html" className="learn-more text-T1">
+              <Link href="/sorsx_hire" className="learn-more text-T1">
                 Learn more
                 <img src="assets/index/arrow-right-dark.svg" alt="arrow" />
-              </a>
+              </Link>
             </div>
 
             <div className="platform-card">
@@ -674,10 +675,10 @@ export default function Home() {
                   </span>
                 </li>
               </ul>
-              <a href="ai_interviewer.html" className="learn-more text-T1">
+              <Link href="/ai_interviewer" className="learn-more text-T1">
                 Learn more
                 <img src="assets/index/arrow-right-dark.svg" alt="arrow" />
-              </a>
+              </Link>
             </div>
 
             <div className="platform-card">
@@ -721,10 +722,10 @@ export default function Home() {
                   </span>
                 </li>
               </ul>
-              <a href="sorsx_next.html" className="learn-more text-T1">
+              <Link href="/sorsx_next" className="learn-more text-T1">
                 Learn more
                 <img src="assets/index/arrow-right-dark.svg" alt="arrow" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -873,11 +874,11 @@ export default function Home() {
             </div>
 
             <div className="btn-wrapper">
-              <a href="demo_page_1.html">
+              <Link href="/demo_page_1">
                 <button className="blue-border-button">
                   <p>Learn more</p>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
 

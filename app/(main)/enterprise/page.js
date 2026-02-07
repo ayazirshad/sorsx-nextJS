@@ -2,6 +2,7 @@ import React from "react";
 import "./enterprise.css";
 import FAQs from "@/components/FAQs/FAQs";
 import Slider from "@/components/Slider/Slider";
+import Link from "next/link";
 
 const Enterprise = () => {
   const faqs = [
@@ -53,11 +54,11 @@ const Enterprise = () => {
               decisions at scale.
             </p>
             <div className="btn-wrapper">
-              <a href="demo_page_2.html">
+              <Link href="/demo_page_2">
                 <button className="blue-border-button">
                   <p>Request a demo</p>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hero-image-wrapper">

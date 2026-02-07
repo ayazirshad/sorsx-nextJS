@@ -1,7 +1,8 @@
 import FAQs from "@/components/FAQs/FAQs";
 import Slider from "@/components/Slider/Slider";
 import React from "react";
-import "../../(main)/ai_interviewer/ai_interviewer.css";
+import "./ai_interviewer.css";
+import Link from "next/link";
 
 const AiInterviewer = () => {
   const faqs = [
@@ -37,7 +38,7 @@ const AiInterviewer = () => {
   ];
 
   return (
-    <div>
+    <div id="trAiInterviewer">
       {/* <!-- hero  --> */}
       <section className="text-center hero-section">
         <div className="container">
@@ -68,11 +69,11 @@ const AiInterviewer = () => {
             güvenmesini sağlar.
           </p>
           <div className="btn-wrapper">
-            <a href="demo_page_2.html">
+            <Link href="/tr/demo_page_2">
               <button className="blue-border-button">
                 <p>Demo talep edin</p>
               </button>
-            </a>
+            </Link>
           </div>
           <div className="mobile-image">
             <img
@@ -138,11 +139,11 @@ const AiInterviewer = () => {
               sonuçları sonradan inceleyebilir.
             </p>
             <div className="mt-3">
-              <a href="demo_page_1.html">
+              <Link href="/tr/demo_page_1">
                 <button className="white-button">
                   AI Mülakat Deneyimine Tanık Olun
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

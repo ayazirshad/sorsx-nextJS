@@ -24,7 +24,7 @@ const Construction = () => {
               staff before they step on site.
             </p>
             <div className="btn-wrapper">
-              <Link href="demo_page_2.html">
+              <Link href="demo_page_2">
                 <button className="blue-border-button">
                   <p>Request a demo</p>
                 </button>
@@ -149,7 +149,7 @@ const Construction = () => {
           </div>
 
           <div className="hiring-cta flex-center mt-3">
-            <Link href="demo_page_1.html">
+            <Link href="demo_page_1">
               <button className="blue-button">
                 See SorsX for Construction
               </button>

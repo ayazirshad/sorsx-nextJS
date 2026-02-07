@@ -55,7 +55,7 @@ const SorsxHire = () => {
             shortlist top talent in minutes.
           </p>
           <div className="btn-wrapper">
-            <Link href="demo_page_2.html">
+            <Link href="/demo_page_2">
               <button className="blue-border-button">
                 <p>Request a demo</p>
               </button>
@@ -135,7 +135,7 @@ const SorsxHire = () => {
               ready-to-meet candidates.
             </p>
             <div className="mt-3">
-              <Link href="demo_page_1.html">
+              <Link href="/demo_page_1">
                 <button className="white-button">
                   See ScaleHire in action
                 </button>

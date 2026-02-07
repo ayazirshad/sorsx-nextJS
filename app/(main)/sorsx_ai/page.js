@@ -77,7 +77,7 @@ const SorsxAi = () => {
             hire-ready shortlists without agencies or extra tools.
           </p>
           <div className="btn-wrapper">
-            <Link href="demo_page_2.html">
+            <Link href="/demo_page_2">
               <button className="blue-border-button">
                 <p>Request a demo</p>
               </button>
@@ -130,7 +130,7 @@ const SorsxAi = () => {
               response rates while protecting candidate experience.
             </p>
             <div className="mt-3">
-              <Link href="demo_page_1.html">
+              <Link href="/demo_page_1">
                 <button className="white-button">See SorsX AI in action</button>
               </Link>
             </div>

@@ -1,7 +1,8 @@
 import FAQs from "@/components/FAQs/FAQs";
 import React from "react";
-import "@/app/(main)/sorsx_hire/sorsx_hire.css";
+import "./sorsx_hire.css";
 import Slider from "@/components/Slider/Slider";
+import Link from "next/link";
 
 const SorsxHire = () => {
   const faqs = [
@@ -38,7 +39,7 @@ const SorsxHire = () => {
   ];
 
   return (
-    <div>
+    <div id="trSorsxHire">
       {/* <!-- hero  --> */}
       <section className="text-center hero-section">
         <div className="container">
@@ -66,11 +67,11 @@ const SorsxHire = () => {
             sağlayın.
           </p>
           <div className="btn-wrapper">
-            <a href="demo_page_2.html">
+            <Link href="/tr/demo_page_2">
               <button className="blue-border-button">
                 <p>Demo talep edin</p>
               </button>
-            </a>
+            </Link>
           </div>
 
           <div className="mobile-image">
@@ -151,11 +152,11 @@ const SorsxHire = () => {
               fazla zaman ayırır.
             </p>
             <div className="mt-3">
-              <a href="demo_page_1.html">
+              <Link href="/tr/demo_page_1">
                 <button className="white-button">
                   ScaleHire’ı Canlı Görün
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

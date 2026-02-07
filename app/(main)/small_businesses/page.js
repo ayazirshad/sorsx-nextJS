@@ -2,6 +2,7 @@ import React from "react";
 import "./small_businesses.css";
 import FAQs from "@/components/FAQs/FAQs";
 import Slider from "@/components/Slider/Slider";
+import Link from "next/link";
 
 const SmallBusinesses = () => {
   const faqs = [
@@ -51,11 +52,11 @@ const SmallBusinesses = () => {
               automatically so you can hire in minutes, not months.
             </p>
             <div className="btn-wrapper">
-              <a href="demo_page_2.html">
+              <Link href="/demo_page_2">
                 <button className="blue-border-button">
                   <p>Request a demo</p>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hero-image-wrapper">

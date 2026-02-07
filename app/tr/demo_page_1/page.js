@@ -1,10 +1,10 @@
 import React from "react";
-import "@/app/(main)/demo_page_1/demo_page_1.css";
+import "./demo_page_1.css";
 import Slider from "@/components/Slider/Slider";
 
 const DemoPage1 = () => {
   return (
-    <>
+    <div id="trDemoPage1">
       {/* <!-- hero --> */}
       <section className="text-center hero-section">
         <div className="bg-rod-container">
@@ -276,7 +276,7 @@ const DemoPage1 = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import Slider from "@/components/Slider/Slider";
 import React from "react";
 import "./homePage.css";
+import Link from "next/link";
 
 const TrHome = () => {
   return (
@@ -20,11 +21,11 @@ const TrHome = () => {
               yalnızca en doğru adaylara odaklanmasını sağlar.
             </p>
             <div className="btn-wrapper">
-              <a href="demo_page_1.html">
+              <Link href="/tr/demo_page_1">
                 <button className="blue-border-button">
                   <p>Demo talep edin</p>
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="hero-trust-logos">
               <img src="../assets/index/capterra.png" alt="Capterra" />
@@ -84,9 +85,9 @@ const TrHome = () => {
               </p>
             </div>
             <div className="header-right">
-              <a href="demo_page_1.html">
+              <Link href="/tr/demo_page_1">
                 <button className="white-button">Daha Fazlası İçin</button>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -467,11 +468,11 @@ const TrHome = () => {
               akıllı işe alım yapmasını sağlar.
             </p>
             <div className="btn-wrapper">
-              <a href="demo_page_1.html">
+              <Link href="/tr/demo_page_1">
                 <button className="blue-border-button">
                   <p>Demo talep edin</p>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -520,10 +521,10 @@ const TrHome = () => {
                   </span>
                 </li>
               </ul>
-              <a href="demo_page_1.html" className="learn-more text-T1">
+              <Link href="/tr/demo_page_1" className="learn-more text-T1">
                 Daha fazlasını keşfet
                 <img src="../assets/index/arrow-right-dark.svg" alt="arrow" />
-              </a>
+              </Link>
             </div>
 
             <div className="platform-card">
@@ -567,10 +568,10 @@ const TrHome = () => {
                   </span>
                 </li>
               </ul>
-              <a href="demo_page_1.html" className="learn-more text-T1">
+              <Link href="/tr/demo_page_1" className="learn-more text-T1">
                 Daha fazlasını keşfet
                 <img src="../assets/index/arrow-right-dark.svg" alt="arrow" />
-              </a>
+              </Link>
             </div>
 
             <div className="platform-card">
@@ -614,10 +615,10 @@ const TrHome = () => {
                   </span>
                 </li>
               </ul>
-              <a href="demo_page_1.html" className="learn-more text-T1">
+              <Link href="/tr/demo_page_1" className="learn-more text-T1">
                 Daha fazlasını keşfet
                 <img src="../assets/index/arrow-right-dark.svg" alt="arrow" />
-              </a>
+              </Link>
             </div>
 
             <div className="platform-card">
@@ -661,10 +662,10 @@ const TrHome = () => {
                   </span>
                 </li>
               </ul>
-              <a href="demo_page_1.html" className="learn-more text-T1">
+              <Link href="/tr/demo_page_1" className="learn-more text-T1">
                 Daha fazlasını keşfet
                 <img src="../assets/index/arrow-right-dark.svg" alt="arrow" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -824,11 +825,11 @@ const TrHome = () => {
             </div>
 
             <div className="btn-wrapper">
-              <a href="demo_page_1.html">
+              <Link href="/tr/demo_page_1">
                 <button className="blue-border-button">
                   <p>Daha fazlasını keşfet</p>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
 

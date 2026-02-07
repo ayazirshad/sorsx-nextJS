@@ -4,7 +4,7 @@ import "@/app/(main)/demo_page_2/demo_page_2.css";
 
 const DemoPage2 = () => {
   return (
-    <div>
+    <div id="trDemoPage2">
       {/* <!-- hero  --> */}
       <section className="hero-section">
         <div className="bg-rod-container">

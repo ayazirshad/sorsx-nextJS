@@ -2,6 +2,7 @@ import FAQs from "@/components/FAQs/FAQs";
 import React from "react";
 import "./midsize_businesses.css";
 import Slider from "@/components/Slider/Slider";
+import Link from "next/link";
 
 const MidsizeBusinesses = () => {
   const faqs = [
@@ -52,11 +53,11 @@ const MidsizeBusinesses = () => {
               locations.
             </p>
             <div className="btn-wrapper">
-              <a href="demo_page_2.html">
+              <Link href="/demo_page_2">
                 <button className="blue-border-button">
                   <p>Request a demo</p>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hero-image-wrapper">

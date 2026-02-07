@@ -1,7 +1,8 @@
 import FAQs from "@/components/FAQs/FAQs";
 import Slider from "@/components/Slider/Slider";
 import React from "react";
-import "@/app/(main)/midsize_businesses/midsize_businesses.css";
+import "./midsize_businesses.css";
+import Link from "next/link";
 
 const MidsizeBusinesses = () => {
   const faqs = [
@@ -35,7 +36,7 @@ const MidsizeBusinesses = () => {
   ];
 
   return (
-    <div>
+    <div id="trMidsize">
       {/* <!-- hero  --> */}
       <section className="hero-section hospitality-hero padding-y">
         <div className="container hero-grid">
@@ -55,11 +56,11 @@ const MidsizeBusinesses = () => {
               ve mülakat yazılımıdır.
             </p>
             <div className="btn-wrapper">
-              <a href="demo_page_2.html">
+              <Link href="/tr/demo_page_2">
                 <button className="blue-border-button">
                   <p>Demo talep edin</p>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hero-image-wrapper">
