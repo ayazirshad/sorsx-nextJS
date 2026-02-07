@@ -52,7 +52,7 @@ const Header = () => {
     >
       <div className="nav-container">
         <div className="logo-wrapper">
-          <Link href="/">
+          <Link href="/tr">
             <img
               src="/assets/index/SorsX-Logo-Black.png"
               alt="logo"
@@ -81,7 +81,7 @@ const Header = () => {
             <div className="dropdown-menu mega-menu">
               <div className="mega-menu-grid">
                 <div className="mega-menu-column">
-                  <Link href="/sorsx_hire" className="mega-menu-item">
+                  <Link href="/tr/sorsx_hire" className="mega-menu-item">
                     <img
                       src="/assets/index/nav_icons/scale hire.png"
                       alt="icon"
@@ -95,7 +95,7 @@ const Header = () => {
                     </div>
                   </Link>
 
-                  <Link href="/ai_interviewer" className="mega-menu-item">
+                  <Link href="/tr/ai_interviewer" className="mega-menu-item">
                     <img
                       src="/assets/index/nav_icons/ai interviewer.png"
                       alt="icon"
@@ -133,7 +133,10 @@ const Header = () => {
               <div className="mega-menu-grid">
                 {/* <!-- Left Column --> */}
                 <div className="mega-menu-column">
-                  <Link href="/midsize_businesses" className="mega-menu-item">
+                  <Link
+                    href="/tr/midsize_businesses"
+                    className="mega-menu-item"
+                  >
                     <img
                       src="/assets/index/nav_icons/midsize.png"
                       alt="icon"
@@ -204,7 +207,7 @@ const Header = () => {
             >
               Log In
             </Link>
-            <Link href="/demo_page_2" rel="noopener noreferrer">
+            <Link href="/tr/demo_page_2" rel="noopener noreferrer">
               <button className="nav-button">Request a demo</button>
             </Link>
           </div>
@@ -273,7 +276,7 @@ const Header = () => {
           >
             Log In
           </Link>
-          <Link href="/demo_page_2" rel="noopener noreferrer">
+          <Link href="/tr/demo_page_2" rel="noopener noreferrer">
             <button className="blue-button">Request a demo</button>
           </Link>
         </div>

@@ -25,7 +25,7 @@ const Footer = () => {
               <h4 className="footer-heading">Business Size</h4>
               <ul className="footer-links">
                 <li>
-                  <Link href="/midsize_businesses">Midsize Businesses</Link>
+                  <Link href="/tr/midsize_businesses">Midsize Businesses</Link>
                 </li>
               </ul>
             </div>
@@ -33,10 +33,10 @@ const Footer = () => {
               <h4 className="footer-heading">Platform</h4>
               <ul className="footer-links">
                 <li>
-                  <Link href="/sorsx_hire">SorsX Hire</Link>
+                  <Link href="/tr/sorsx_hire">SorsX Hire</Link>
                 </li>
                 <li>
-                  <Link href="/ai_interviewer">AI Interviewer</Link>
+                  <Link href="/tr/ai_interviewer">AI Interviewer</Link>
                 </li>
               </ul>
             </div>
@@ -45,26 +45,26 @@ const Footer = () => {
               <h4 className="footer-heading">Privacy & Security</h4>
               <ul className="footer-links">
                 <li>
-                  <Link href="/terms_of_service">Terms of Use</Link>
+                  <Link href="/tr/terms_of_service">Terms of Use</Link>
                 </li>
                 <li>
-                  <Link href="/privacy_policy">Privacy Policy</Link>
+                  <Link href="/tr/privacy_policy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link href="/candidate_notice_and_consent">
+                  <Link href="/tr/candidate_notice_and_consent">
                     Candidate Notice and Consent
                   </Link>
                 </li>
                 <li>
-                  <Link href="/cookie_notice">Cookie Settings</Link>
+                  <Link href="/tr/cookie_notice">Cookie Settings</Link>
                 </li>
                 <li>
-                  <Link href="/data_processing_addendum">
+                  <Link href="/tr/data_processing_addendum">
                     Data Processing Addendum
                   </Link>
                 </li>
                 <li>
-                  <Link href="/opt_out_request">
+                  <Link href="/tr/opt_out_request">
                     Do Not Sell My Personal Information
                   </Link>
                 </li>
