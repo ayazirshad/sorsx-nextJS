@@ -35,7 +35,7 @@ const Enterprise = () => {
   ];
 
   return (
-    <>
+    <div id="enterprise-page">
       {/* <!-- hero  --> */}
       <section className="hero-section hospitality-hero padding-y">
         <div className="container hero-grid">
@@ -256,7 +256,7 @@ const Enterprise = () => {
 
       {/* faqs */}
       <FAQs faqsData={faqs} />
-    </>
+    </div>
   );
 };
 

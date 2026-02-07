@@ -7,7 +7,7 @@ import { blogData } from "@/lib/blogData";
 const SorsxBlog = () => {
   const [blogs, setBlogs] = useState(blogData);
   return (
-    <>
+    <div id="sorsx-blog-page">
       {/* hero section  */}
       <main>
         {/* Newsroom Header */}
@@ -50,7 +50,7 @@ const SorsxBlog = () => {
           </div>
         </section>
       </main>
-    </>
+    </div>
   );
 };
 

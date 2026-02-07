@@ -39,7 +39,7 @@ const SorsxHire = () => {
   ];
 
   return (
-    <>
+    <div id="sorsx-hire-page">
       {/* <!-- hero  --> */}
       <section className="text-center hero-section">
         <div className="container">
@@ -356,7 +356,7 @@ const SorsxHire = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

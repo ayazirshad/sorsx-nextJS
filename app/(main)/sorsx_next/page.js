@@ -41,7 +41,7 @@ const SorsxNext = () => {
   ];
 
   return (
-    <>
+    <div id="sorsx-next-page">
       {/* <!-- hero  --> */}
       <section className="text-center hero-section">
         <div className="container">
@@ -259,7 +259,7 @@ const SorsxNext = () => {
 
       {/* faqs */}
       <FAQs faqsData={faqs} />
-    </>
+    </div>
   );
 };
 

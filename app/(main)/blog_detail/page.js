@@ -15,7 +15,7 @@ const BlogDetailContent = () => {
   const relatedBlogs = blogData.filter((b) => b.id !== blogId).slice(0, 3);
 
   return (
-    <>
+    <div id="blog-detail-page">
       {/* hero */}
       <main>
         {/* Blog Hero Section */}
@@ -114,7 +114,7 @@ const BlogDetailContent = () => {
           </section>
         )}
       </main>
-    </>
+    </div>
   );
 };
 

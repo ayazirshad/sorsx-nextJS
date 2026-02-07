@@ -34,7 +34,7 @@ const MidsizeBusinesses = () => {
   ];
 
   return (
-    <>
+    <div id="midsize-businesses-page">
       {/* <!-- hero  --> */}
       <section className="hero-section hospitality-hero padding-y">
         <div className="container hero-grid">
@@ -265,7 +265,7 @@ const MidsizeBusinesses = () => {
 
       {/* faqs */}
       <FAQs faqsData={faqs} />
-    </>
+    </div>
   );
 };
 

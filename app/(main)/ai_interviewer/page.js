@@ -36,7 +36,7 @@ const AiInterviewer = () => {
   ];
 
   return (
-    <>
+    <div id="ai-interviewer-page">
       {/* <!-- hero  --> */}
       <section className="text-center hero-section">
         <div className="container">
@@ -53,7 +53,7 @@ const AiInterviewer = () => {
             managers trust every shortlist.
           </p>
           <div className="btn-wrapper">
-            <Link href="/demo_page_2">
+            <Link href="/demo_page_1">
               <button className="blue-border-button">
                 <p>Request a demo</p>
               </button>
@@ -333,7 +333,7 @@ const AiInterviewer = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

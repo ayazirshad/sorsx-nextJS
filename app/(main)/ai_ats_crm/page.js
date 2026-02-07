@@ -40,7 +40,7 @@ const AiAtsCrm = () => {
   ];
 
   return (
-    <>
+    <div id="ai_ats_page">
       {/* <!-- hero  --> */}
       <section className="text-center hero-section">
         <div className="container">
@@ -345,7 +345,7 @@ const AiAtsCrm = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
