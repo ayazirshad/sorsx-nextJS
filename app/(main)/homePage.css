@@ -115,7 +115,7 @@
     padding: 0px;
     display: block;
     margin-top: 0;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   @media (min-width: 1640px) {
@@ -1375,7 +1375,7 @@
   }
 
   .platform-card .card-desc {
-    font-size: clamp(13px, 1vw, 16px);
+    font-size: clamp(13px, 1vw, 18px);
     font-family: var(--font-inter);
     font-weight: 400;
     color: #181d27;
