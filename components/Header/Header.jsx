@@ -460,7 +460,7 @@ const Header = () => {
               </div>
             </div>
             <Link
-              href="/https://employer.sorsx.com/login"
+              href="https://employer.sorsx.com/login"
               target="_blank"
               rel="noopener noreferrer"
               title="Login"
@@ -529,7 +529,7 @@ const Header = () => {
 
           {/* <!-- login link  --> */}
           <Link
-            href="/https://employer.sorsx.com/login"
+            href="https://employer.sorsx.com/login"
             target="_blank"
             rel="noopener noreferrer"
             title="Login"

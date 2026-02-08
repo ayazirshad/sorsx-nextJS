@@ -1,6 +1,6 @@
 import Slider from "@/components/Slider/Slider";
 import React from "react";
-import "@/app/(main)/demo_page_2/demo_page_2.css";
+import "./demo_page_2.css";
 
 const DemoPage2 = () => {
   return (
@@ -18,7 +18,7 @@ const DemoPage2 = () => {
         <div className="content-wrapper container">
           <div className="left-content">
             <h1 className="main-heading">
-              <span>Yapay Zeka Destekli İşe Alım</span>
+              <span>Yapay Zeka Destekli İşe Alım </span>
               <span className="first-word">Demo’nuzu Planlayın</span>
             </h1>
 
