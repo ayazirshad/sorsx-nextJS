@@ -1,10 +1,40 @@
+"use client";
+
 import FAQs from "@/components/FAQs/FAQs";
-import React from "react";
+import React, { useState } from "react";
 import "./sorsx_hire.css";
 import Slider from "@/components/Slider/Slider";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const SorsxHire = () => {
+  const router = useRouter();
+    const [email, setEmail] = useState("");
+    const [error, setError] = useState("");
+  
+    const handleDemoRedirect = () => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+      if (!email) {
+        setError("Lütfen e-posta adresinizi girin.");
+        return;
+      }
+  
+      if (!emailRegex.test(email)) {
+        setError("Lütfen geçerli bir e-posta adresi girin.");
+        return;
+      }
+  
+      setError("");
+      try {
+        localStorage.setItem("demo_email", email);
+      } catch (e) {
+        // ignore storage errors (e.g., private mode)
+      }
+  
+      router.push("/demo_page_1");
+    };
+  
   const faqs = [
     {
       question: "ScaleHire nedir?",
@@ -354,13 +384,25 @@ const SorsxHire = () => {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="email-input-card"
+                 className={`email-input ${error ? "email-input--error" : ""} email-input-card`}
                   id="emailInputCard"
-                  required
-                />
-                <span className="card-error" id="emailCardError"></span>
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    if (error) setError("");
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") handleDemoRedirect();
+                  }}                />
+               <div
+                  className={`form-hint ${error ? "form-hint--error" : ""}`}
+                  role="alert"
+                  aria-live="polite"
+                >
+                  {<span>{error}</span>}
+                </div>
 
-                <button className="blue-button card-button" id="demoBtnCard">
+                <button className="blue-button card-button" id="demoBtn"
+                  onClick={handleDemoRedirect}>
                   Demo Planlayın
                 </button>
               </div>

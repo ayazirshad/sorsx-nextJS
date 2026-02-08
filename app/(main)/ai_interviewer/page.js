@@ -1,10 +1,40 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import "./ai_interviewer.css";
 import Slider from "@/components/Slider/Slider";
 import FAQs from "@/components/FAQs/FAQs";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const AiInterviewer = () => {
+  const router = useRouter();
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const handleDemoRedirect = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email) {
+      setError("Please enter your email address.");
+      return;
+    }
+
+    if (!emailRegex.test(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setError("");
+    try {
+      localStorage.setItem("demo_email", email);
+    } catch (e) {
+      // ignore storage errors (e.g., private mode)
+    }
+
+    router.push("/demo_page_1");
+  };
+
   const faqs = [
     {
       question: "What is AI interview software?",
@@ -307,14 +337,31 @@ const AiInterviewer = () => {
                 <input
                   type="email"
                   placeholder="Email"
-                  className="email-input-card"
+                  className={`email-input ${error ? "email-input--error" : ""} email-input-card`}
                   id="emailInputCard"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    if (error) setError("");
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") handleDemoRedirect();
+                  }}
                   required
                 />
 
-                <span className="card-error" id="emailCardError"></span>
+                <div
+                  className={`form-hint ${error ? "form-hint--error" : ""}`}
+                  role="alert"
+                  aria-live="polite"
+                >
+                  {<span>{error}</span>}
+                </div>
 
-                <button className="blue-button card-button" id="demoBtnCard">
+                <button
+                  className="blue-button card-button"
+                  id="demoBtn"
+                  onClick={handleDemoRedirect}
+                >
                   Book a Demo
                 </button>
               </div>

@@ -1,10 +1,40 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import "./sorsx_ai.css";
 import Slider from "@/components/Slider/Slider";
 import FAQs from "@/components/FAQs/FAQs";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const SorsxAi = () => {
+  const router = useRouter();
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const handleDemoRedirect = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email) {
+      setError("Please enter your email address.");
+      return;
+    }
+
+    if (!emailRegex.test(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setError("");
+    try {
+      localStorage.setItem("demo_email", email);
+    } catch (e) {
+      // ignore storage errors (e.g., private mode)
+    }
+
+    router.push("/demo_page_1");
+  };
+
   const faqs = [
     {
       question: "What is AI sourcing?",
@@ -283,12 +313,33 @@ const SorsxAi = () => {
             <input
               type="email"
               placeholder="Email"
-              className="email-input"
+              className={`email-input ${error ? "email-input--error" : ""}`}
               id="emailInput"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                if (error) setError("");
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleDemoRedirect();
+              }}
               required
             />
+
+            <div
+              className={`form-hint ${error ? "form-hint--error" : ""}`}
+              role="alert"
+              aria-live="polite"
+            >
+              {<span>{error}</span>}
+            </div>
+
             <div className="mt-2">
-              <button className="white-button mx-auto" id="demoBtn">
+              <button
+                className="white-button mx-auto"
+                id="demoBtn"
+                onClick={handleDemoRedirect}
+              >
                 Book a Demo
               </button>
             </div>
