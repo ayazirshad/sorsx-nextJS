@@ -215,7 +215,7 @@ const AiAtsCrm = () => {
             </div>
 
             <div className="card-main-img">
-              <img src="assets/ai_ats_crm/AIATS(card1).png" alt="interview" />
+              <img src="assets/ai_ats_crm/AiATS(card1).png" alt="interview" />
             </div>
           </div>
 
@@ -237,7 +237,7 @@ const AiAtsCrm = () => {
                 </p>
               </div>
               <div className="card-side-img">
-                <img src="assets/ai_ats_crm/AiATS(Card2).png" alt="Decisions" />
+                <img src="assets/ai_ats_crm/AiATS(card2).png" alt="Decisions" />
               </div>
             </div>
 
