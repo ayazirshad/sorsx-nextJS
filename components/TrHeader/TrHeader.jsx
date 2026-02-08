@@ -158,8 +158,15 @@ const Header = () => {
 
           {/* MOBILE CTA — FULLY KEPT */}
           <div className="cta-btn-mobile">
-            <div className="dropdown choose-language">
-              <button className="dropdown-toggle">
+            <div
+              className={`dropdown choose-language ${
+                openDropdown === "chooseLangMobile" ? "open" : ""
+              }`}
+            >
+              <button
+                className="dropdown-toggle"
+                onClick={(e) => toggleDropdown("chooseLangMobile", e)}
+              >
                 <img
                   src="/assets/index/globe_01.png"
                   alt="globe"
