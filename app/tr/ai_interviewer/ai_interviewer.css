@@ -49,6 +49,47 @@
     content: " ";
   }
 
+
+  /* Input error state — clean SaaS ring */
+  .email-input--error {
+    border: 1px solid rgba(240, 68, 56, 0.85) !important;
+    box-shadow:
+      0 0 0 4px rgba(240, 68, 56, 0.14),
+      0 8px 20px rgba(16, 24, 40, 0.15) !important;
+  }
+
+  /* Hint row (helper text / error text) */
+  .form-hint {
+    /* margin-top: 10px; */
+    min-height: 18px;
+    /* prevents layout shift */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* center under input like your layout */
+    gap: 8px;
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+  }
+
+  .form-hint__muted {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .form-hint--error {
+    color: rgba(240, 68, 56, 0.95);
+  }
+
+  .form-hint--error .hint-icon {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(240, 68, 56, 0.95);
+    /* display: inline-block; */
+  }
+
   @media (max-width: 768px) {
     .first-word::after {
       content: "\A"; /* Forces line break */

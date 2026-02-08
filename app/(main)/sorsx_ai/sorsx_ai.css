@@ -16,6 +16,45 @@
     text-align: center;
   }
 
+  /* Input error state — clean SaaS ring */
+  .email-input--error {
+    border: 1px solid rgba(240, 68, 56, 0.85) !important;
+    box-shadow:
+      0 0 0 4px rgba(240, 68, 56, 0.14),
+      0 8px 20px rgba(16, 24, 40, 0.15) !important;
+  }
+
+  /* Hint row (helper text / error text) */
+  .form-hint {
+    /* margin-top: 10px; */
+    min-height: 18px;
+    /* prevents layout shift */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* center under input like your layout */
+    gap: 8px;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+  }
+
+  .form-hint__muted {
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .form-hint--error {
+    color: rgba(240, 68, 56, 0.95);
+  }
+
+  .form-hint--error .hint-icon {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(240, 68, 56, 0.95);
+    /* display: inline-block; */
+  }
+
   .page-name-wrapper {
     margin-bottom: 10px;
   }
@@ -43,20 +82,23 @@
   .first-word {
     color: var(--color-blue);
   }
+
   .first-word::after {
     content: " ";
   }
 
   @media (max-width: 768px) {
     .first-word::after {
-      content: "\A"; /* Forces line break */
+      content: "\A";
+      /* Forces line break */
       white-space: pre;
     }
   }
 
   .sub-text {
     font-family: var(--font-inter);
-    font-size: clamp(16px, 1.1vw, 20px); /* Fluid 16-20px */
+    font-size: clamp(16px, 1.1vw, 20px);
+    /* Fluid 16-20px */
     color: var(--color-text-secondary);
     margin-top: 20px;
     font-weight: 300;
@@ -64,7 +106,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 720px;
-    line-height: clamp(24px, 1.56vw, 30px); /* Fluid line-height */
+    line-height: clamp(24px, 1.56vw, 30px);
+    /* Fluid line-height */
   }
 
   @media (max-width: 1024px) {
@@ -72,6 +115,7 @@
       font-size: 42px;
       line-height: 115%;
     }
+
     .sub-text {
       font-size: 15px;
     }
@@ -82,6 +126,7 @@
       font-size: 36px;
       line-height: 120%;
     }
+
     .sub-text {
       font-size: 14px;
     }
@@ -110,6 +155,7 @@
     width: 100%;
     height: auto;
   }
+
   .mobile-image img {
     width: 100%;
     height: 100%;
@@ -123,6 +169,7 @@
     .mobile-image {
       display: none;
     }
+
     .desktop-image {
       display: block;
     }
@@ -148,14 +195,18 @@
     padding-left: var(--section-px);
     padding-right: var(--section-px);
     gap: 70px;
-    width: calc(200px * 24); /* Large width for scrolling */
+    width: calc(200px * 24);
+    /* Large width for scrolling */
     /* Animation handled via media queries */
   }
 
   .slide {
-    height: 40px; /* Increased from 20px for better visibility */
-    width: 120px; /* Explicit width */
-    flex-shrink: 0; /* Prevent squashing */
+    height: 40px;
+    /* Increased from 20px for better visibility */
+    width: 120px;
+    /* Explicit width */
+    flex-shrink: 0;
+    /* Prevent squashing */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,6 +220,7 @@
     object-fit: contain;
     transition: transform 0.3s;
   }
+
   /* .slide img:hover {
   transform: translateZ(20px);
 } */
@@ -177,6 +229,7 @@
     0% {
       transform: translateX(0);
     }
+
     100% {
       /* Adjusted to match Demo page 2 */
       transform: translateX(calc(-170px * 8));
@@ -186,7 +239,8 @@
   /* DESKTOP STYLES (>= 768px) */
   @media (min-width: 768px) {
     .slide-track {
-      max-width: 1920px; /* Apply max-width only on desktop */
+      max-width: 1920px;
+      /* Apply max-width only on desktop */
       width: 100%;
       justify-content: space-around;
       animation: none;
@@ -203,7 +257,8 @@
   @media (max-width: 767px) {
     .slide-track {
       animation: scroll 20s linear infinite;
-      gap: 70px; /* Ensure gap is consistent */
+      gap: 70px;
+      /* Ensure gap is consistent */
     }
 
     /* Ensure all slides are visible on mobile for the loop */
@@ -219,11 +274,9 @@
 
   .slider::before,
   .slider::after {
-    background: linear-gradient(
-      to right,
-      var(--color-bg) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(to right,
+        var(--color-bg) 0%,
+        rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100%;
     position: absolute;
@@ -257,7 +310,8 @@
   }
 
   .logo-stack {
-    display: none; /* Globally hidden */
+    display: none;
+    /* Globally hidden */
     width: 100%;
     gap: 32px;
     flex-wrap: wrap;
@@ -269,12 +323,14 @@
 
   @media (max-width: 768px) {
     .slider {
-      display: grid; /* Make slider visible */
+      display: grid;
+      /* Make slider visible */
     }
 
     /* .logo-stack {
     margin-bottom: 30px;
-  } */ /* Removed */
+  } */
+    /* Removed */
 
     .hero-image-wrapper img {
       margin-top: 0;
@@ -287,12 +343,14 @@
       gap: 10px;
       width: 100%;
     }
+
     .btn-wrapper button {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     .buttons-desktop {
       display: none;
     }
@@ -310,6 +368,7 @@
     justify-content: center;
     background-color: var(--color-bg);
   }
+
   .feature-info-section .info-image img {
     object-fit: cover;
   }
@@ -376,15 +435,18 @@
   }
 
   @media (max-width: 1536px) {
+
     /* .section-heading {
     font-size: 42px;
   } */
     .section-description {
       max-width: 566px;
     }
+
     .info-image {
       justify-content: end;
     }
+
     .feature-info-section {
       padding: 20px 0;
     }
@@ -460,24 +522,26 @@
     .outreach-section .info-image {
       justify-content: start;
     }
+
     .outreach-section .info-image img {
       width: 90%;
     }
 
-    .outreach-section .section-description {
-    }
+    .outreach-section .section-description {}
   }
 
   @media (max-width: 768px) {
     .outreach-section .info-image {
       padding-right: 0;
     }
+
     .info-image {
       padding-right: 0;
       justify-content: center;
       width: 100%;
       max-width: 100%;
     }
+
     .info-image img {
       width: 100%;
       max-width: 100%;
@@ -528,7 +592,8 @@
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    filter: blur(200px); /* Adjusting for visible effect on web layout */
+    filter: blur(200px);
+    /* Adjusting for visible effect on web layout */
     opacity: 0.6;
   }
 
@@ -537,11 +602,13 @@
     top: 30%;
     left: -20%;
   }
+
   .circle-2 {
     background: #4eeae7;
     top: 30%;
     right: 40%;
   }
+
   .circle-3 {
     background: #4e6bea;
     top: 30%;
@@ -617,8 +684,7 @@
 
   .card-main-img {
     width: 100%;
-    padding: 0 clamp(12px, 2.5vw, 32px) clamp(12px, 2.5vw, 32px)
-      clamp(12px, 2.5vw, 32px);
+    padding: 0 clamp(12px, 2.5vw, 32px) clamp(12px, 2.5vw, 32px) clamp(12px, 2.5vw, 32px);
     margin-top: auto;
   }
 
@@ -656,6 +722,7 @@
       max-width: 120%;
     }
   }
+
   @media (max-width: 1024px) {
     .card-horizontal {
       flex-direction: column;
@@ -682,7 +749,8 @@
 
   .feedback-container {
     display: flex;
-    align-items: stretch; /* Stretch to match heights */
+    align-items: stretch;
+    /* Stretch to match heights */
     justify-content: center;
     gap: 20px;
     /* aspect-ratio: 1/1; */
@@ -691,11 +759,15 @@
   }
 
   .ceo-photo-wrapper {
-    height: clamp(200px, 16vw, 317px); /* Defined height */
-    aspect-ratio: 1/1; /* 1:1 Aspect ratio */
-    width: auto; /* Width follows height */
+    height: clamp(200px, 16vw, 317px);
+    /* Defined height */
+    aspect-ratio: 1/1;
+    /* 1:1 Aspect ratio */
+    width: auto;
+    /* Width follows height */
     border-radius: 12px;
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-shrink: 0;
+    /* Prevent shrinking */
   }
 
   @media (max-width: 1536px) {
@@ -708,7 +780,8 @@
   .ceo-photo {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure image covers the square area */
+    object-fit: cover;
+    /* Ensure image covers the square area */
     border-radius: clamp(12px, 2vw, 24px);
     display: block;
   }
@@ -721,9 +794,11 @@
     width: 100%;
     max-width: clamp(600px, 57vw, 1094px);
     flex: 1;
-    display: flex; /* Ensure content distribution */
+    display: flex;
+    /* Ensure content distribution */
     flex-direction: column;
-    justify-content: space-between; /* Push footer to bottom */
+    justify-content: space-between;
+    /* Push footer to bottom */
   }
 
   .quote-mark {
@@ -765,6 +840,7 @@
       flex-direction: column;
       justify-content: start;
     }
+
     .feedback-text {
       margin-bottom: 16px;
     }
@@ -791,18 +867,23 @@
     }
 
     .ceo-photo-wrapper {
-      width: 100%; /* 100% width on mobile */
-      height: auto; /* Auto height on mobile */
-      aspect-ratio: 1/1; /* Maintain square ratio? Or let it be natural? Assuming square based on previous request, but often width:100% square is too big. */
+      width: 100%;
+      /* 100% width on mobile */
+      height: auto;
+      /* Auto height on mobile */
+      aspect-ratio: 1/1;
+      /* Maintain square ratio? Or let it be natural? Assuming square based on previous request, but often width:100% square is too big. */
       /* Checking user request: "under 768px it will have 100% width" */
       /* If we strictly follow "1:1 aspect ratio", a 100% width image on mobile will be HUGE vertically. */
       /* Usually purely responsive images are width: 100%; height: auto; without aspect-ratio forcing. */
       /* But current CSS has aspect-ratio: 1/1 on the class globally. */
       /* I will override aspect-ratio here if needed, but let's stick to the cleanest interpretation: 100% width. */
     }
+
     .ceo-photo {
       width: 100%;
-      height: 100%; /* If wrapper has ratio, this fills it. If wrapper is auto height, this needs intrinsic height. */
+      height: 100%;
+      /* If wrapper has ratio, this fills it. If wrapper is auto height, this needs intrinsic height. */
       object-fit: cover;
     }
 
@@ -850,12 +931,14 @@
     z-index: 1;
     /* opacity: 0.2; */
   }
+
   .circle-medium {
     /* width: 750px; */
     height: 100%;
     z-index: 2;
     /* opacity: 0.3; */
   }
+
   .circle-small {
     /* width: 500px; */
     height: 100%;
@@ -884,6 +967,7 @@
     font-size: 20px;
     line-height: 30px;
   }
+
   .stop-paying-section .white-button {
     width: 220px;
   }
@@ -922,6 +1006,7 @@
       width: 100%;
       max-width: 386px;
     }
+
     .email-input {
       padding: 12px 20px;
     }
@@ -949,9 +1034,11 @@
     .circle-large {
       width: 700px;
     }
+
     .circle-medium {
       width: 500px;
     }
+
     .circle-small {
       width: 300px;
     }
