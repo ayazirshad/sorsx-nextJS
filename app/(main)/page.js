@@ -147,7 +147,7 @@ export default function Home() {
                           />
                         </li>
                       </Link>
-                      <Link href="/tech">
+                      <Link href="/enterprise">
                         <li className="bullet-item">
                           <span>Enterprise</span>
                           <img

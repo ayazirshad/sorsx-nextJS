@@ -1,9 +1,18 @@
+"use client"; 
+
+import { useState } from "react";
 import Slider from "@/components/Slider/Slider";
 import React from "react";
 import "./homePage.css";
 import Link from "next/link";
 
 const TrHome = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  
+    const handleCardClick = (index) => {
+      if (index === activeIndex) return;
+      setActiveIndex(index);
+    };
   return (
     <div id="trHomePage">
       {/* <!-- hero  --> */}
@@ -92,7 +101,9 @@ const TrHome = () => {
           </div>
 
           <div className="industry-cards-container">
-            <div className="industry-card active" data-industry="technology">
+            <div className={`industry-card ${activeIndex === 0 ? "active" : ""}`}
+              data-industry="technology"
+              onClick={() => handleCardClick(0)}>
               <div
                 className="card-bg"
                 style={{
@@ -168,7 +179,9 @@ const TrHome = () => {
               </div>
             </div>
 
-            <div className="industry-card" data-industry="manufacturing">
+            <div  className={`industry-card ${activeIndex === 1 ? "active" : ""}`}
+              data-industry="manufacturing"
+              onClick={() => handleCardClick(1)}>
               <div
                 className="card-bg"
                 style={{
@@ -239,7 +252,9 @@ const TrHome = () => {
               </div>
             </div>
 
-            <div className="industry-card" data-industry="hospitality">
+            <div className={`industry-card ${activeIndex === 2 ? "active" : ""}`}
+              data-industry="hospitality"
+              onClick={() => handleCardClick(2)}>
               <div
                 className="card-bg"
                 style={{
@@ -309,7 +324,9 @@ const TrHome = () => {
               </div>
             </div>
 
-            <div className="industry-card" data-industry="telecom">
+            <div  className={`industry-card ${activeIndex === 3 ? "active" : ""}`}
+              data-industry="telecom"
+              onClick={() => handleCardClick(3)}>
               <div
                 className="card-bg"
                 style={{
@@ -379,7 +396,9 @@ const TrHome = () => {
               </div>
             </div>
 
-            <div className="industry-card" data-industry="healthcare">
+            <div className={`industry-card ${activeIndex === 4 ? "active" : ""}`}
+              data-industry="healthcare"
+              onClick={() => handleCardClick(4)}>
               <div
                 className="card-bg"
                 style={{
@@ -568,7 +587,7 @@ const TrHome = () => {
                   </span>
                 </li>
               </ul>
-              <Link href="/tr/demo_page_1" className="learn-more text-T1">
+              <Link href="/tr/sorsx_hire" className="learn-more text-T1">
                 Daha fazlasını keşfet
                 <img src="../assets/index/arrow-right-dark.svg" alt="arrow" />
               </Link>
@@ -615,7 +634,7 @@ const TrHome = () => {
                   </span>
                 </li>
               </ul>
-              <Link href="/tr/demo_page_1" className="learn-more text-T1">
+              <Link href="/tr/ai_interviewer" className="learn-more text-T1">
                 Daha fazlasını keşfet
                 <img src="../assets/index/arrow-right-dark.svg" alt="arrow" />
               </Link>

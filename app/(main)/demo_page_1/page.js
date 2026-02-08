@@ -50,7 +50,7 @@ const DemoPage1 = () => {
         <div className="container">
           <h1 className="main-heading">
             {/* <!-- Book an Ai Recruiting Demo --> */}
-            <span className="first-word">Book</span>
+            <span className="first-word">Book </span>
             <span className="second-word">an AI</span>
             <br />
             <span>Recruiting Demo</span>
