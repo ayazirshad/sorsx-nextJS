@@ -23,7 +23,7 @@ const DemoPage1 = () => {
           >
             <h1 className="main-heading" style={{ maxWidth: "790px" }}>
               {/* <!-- Book an Ai Recruiting Demo --> */}
-              <span>Yapay Zeka Destekli İşe Alım</span>
+              <span>Yapay Zeka Destekli İşe Alım </span>
               <span className="first-word">Demo’nuzu Planlayın</span>
             </h1>
           </div>
